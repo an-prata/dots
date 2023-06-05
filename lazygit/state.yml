@@ -1,0 +1,19 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/evan/.config
+- /home/evan/Repos/bin-scripts
+- /home/evan/.config/bspwm
+- /home/evan/Repos/simplest-fetch
+- /home/evan/Repos/the-quotidian-library
+- /home/evan/Repos/aprox_eq
+- /home/evan/Repos/scrutiny
+- /home/evan/Repos/crwl
+- /home/evan/Repos/Rain
+- /home/evan/Repos/oolong
+- /home/evan/Repos/2023-Charged-Up
+- /home/evan/Repos/miniplayer
+startuppopupversion: 5
+customcommandshistory:
+- q
+- Q
+hidecommandlog: true

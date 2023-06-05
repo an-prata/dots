@@ -1,0 +1,9 @@
+[player]
+font_width      = 8
+font_height     = 16 
+
+[theme]
+bar_color		= auto
+time_color		= secondary
+accent_color	= auto
+

@@ -1,0 +1,83 @@
+[anilist]
+code = 'def50200f00c5cf424c701a9630d986ccce2a1003c34d02151f69d71f6b63f2fee36f920452a6eb0f99d39bf4b7875f1cc141b4351cfefb3a1ee4a56b37283941710f15b63349aa472259b77e07504d2cb7f3717d057b382365f66ebba5d88a2db9214b20d0f92f85796cc3ef9364c3552499797d041ce20c925e56438d662bc6c0ee0856dd741d3303ea61a50cb205fabc38fdceb42600d1bd38c7a878d34018e158bd067de82b2fe8b0bbe962a75db11373cff2ef594b68f1f76185a23b59385a9fb44dcb7fdeae4240b4aa8888585c38484ac885b22a0cc79d82f78011aef0770eea7e77a59e7fff32bd746e26df137d808548ddedd4f686d165c87daaa3a01b7c500385298963bb7e3df7626f75eda4775f26321f5fbfc545f71da5b3e3a0951a2b9047f3311bddf36fa6291132d1be0bee0c4c042ba788cab873555544adbda8862c463ebbe1376e7b6f28e062559052ca27d49c450e876ce4dedad10bc00909fb0838b9eed6606bca31b0878122890'
+enable = true
+id = '10100'
+link_on_manga_select = true
+secret = 'u9xzquYfHRG8zD6XHNHroCdzhJ7Iiz63KcFH9kB4'
+
+[cli]
+colored = true
+version_check = true
+
+[downloader]
+async = true
+chapter_name_template = '[{padded-index}] {chapter}'
+create_manga_dir = true
+create_volume_dir = false
+default_source = ''
+default_sources = []
+download_cover = true
+path = '.'
+read_downloaded = true
+redownload_existing = false
+stop_on_error = false
+
+[formats]
+skip_unsupported_images = true
+use = 'pdf'
+
+[gen]
+author = ''
+
+[history]
+save_on_download = false
+save_on_read = true
+
+[icons]
+variant = 'plain'
+
+[installer]
+branch = 'main'
+repo = 'mangal-scrapers'
+user = 'metafates'
+
+[logs]
+json = false
+level = 'info'
+write = false
+
+[mangadex]
+language = 'en'
+nsfw = false
+show_unavailable_chapters = false
+
+[metadata]
+comic_info_xml = true
+comic_info_xml_add_date = true
+comic_info_xml_alternative_date = false
+comic_info_xml_tag_relevance_threshold = 60
+fetch_anilist = true
+series_json = false
+
+[mini]
+search_limit = 20
+
+[reader]
+browser = ''
+cbz = ''
+folder = ''
+pdf = 'zathura'
+plain = 'feh --zoom 75'
+read_in_browser = false
+zip = ''
+
+[search]
+show_query_suggestions = true
+
+[tui]
+item_spacing = 1
+read_on_enter = true
+reverse_chapters = false
+search_prompt = '> '
+show_downloaded_path = true
+show_urls = true
