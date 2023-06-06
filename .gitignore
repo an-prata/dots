@@ -39,5 +39,4 @@ kritarc
 pavucontrol.ini
 trashrc
 user-dirs.locale
-dolphinrc
-kigorc
+mpd/state
