@@ -67,6 +67,8 @@ image/*=viewnior.desktop
 image/png=viewnior.desktop
 image/jpg=viewnior.desktop
 text/csv=helix.desktop
+toolkit.legacyUserProfileCustomizations.stylesheets=helix.desktop
+application/x-wine-extension-ini=helix.desktop
 
 [Added Associations]
 image/jpeg=userapp-set-wallpaper-76BXV1.desktop;meh.desktop;feh.desktop;
