@@ -13,12 +13,16 @@ select = "underline"
 hidden = false
 
 [editor.statusline]
-left = ["mode", "spinner", "diagnostics"]
-center = ["file-name"]
-right = ["position", "file-encoding", "file-type"]
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+separator = "|"
+left = ["mode", "separator", "spacer", "version-control", "spacer", "diagnostics", "spinner"]
+center = ["file-base-name", "spinner"]
+right = ["position", "separator", "spacer", "position-percentage", "spacer", "separator", "file-type"]
+mode.normal = "normal"
+mode.insert = "insert"
+mode.select = "select"
+
+[editor.lsp]
+display-inlay-hints = true
 
 [editor.indent-guides]
 render = true
