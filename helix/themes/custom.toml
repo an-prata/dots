@@ -1,25 +1,30 @@
-# Author: NNB <nnbnh@protonmail.com>
+# My custom little helix theme, mostly based off base16_terminal
 
-"ui.menu" = { fg = "light-gray", bg = "gray" }
-"ui.menu.selected" = { modifiers = ["reversed"] }
+# The ui elements are in the order they appear in documentation
+"ui.cursor" = { bg = "comment" }
+"ui.cursor.match" = { fg = "light-yellow", modifiers = ["underlined"] }
 "ui.linenr" = "faded"
-"ui.popup" = { bg = "black" }
-"ui.window" = { bg = "black" }
 "ui.linenr.selected" = { fg = "comment", modifiers = ["bold"] }
-"ui.selection" = { fg = "white", modifiers = ["reversed"] }
-"comment" = { fg = "comment", modifiers = ["italic"] }
 "ui.statusline" = { fg = "comment", bg = "subtle-back", modifiers = ["bold"] }
 "ui.statusline.inactive" = { fg = "gray", bg = "subtle-back" }
-"ui.help" = { fg = "white", bg = "subtle-back" }
-"ui.cursor" = { fg = "light-gray", modifiers = ["reversed"] }
-"ui.cursor.primary" = { fg = "light-gray", modifiers = ["reversed"] }
-"ui.virtual.whitespace" = "light-gray"
+"ui.popup" = { bg = "black" }
+"ui.window" = { bg = "black" }
+"ui.help" = { fg = "comment", bg = "subtle-back" }
+"ui.text" = "text-default"
+"ui.virtual.whitespace" = "faded"
+"ui.virtual.indent-guide" = "black"
+"ui.virtual.inlay-hint" = { fg = "faded", modifiers = ["italic"] }
+"ui.menu" = { fg = "comment", bg = "subtle-back" }
+"ui.menu.selected" = { modifiers = ["reversed"] }
+"ui.selection" = { bg = "faded" }
+
+# code bits
+"comment" = { fg = "comment", modifiers = ["italic"] }
 "variable" = "blue"
 "constant.numeric" = "red"
 "constant" = "yellow"
 "attribute" = "yellow"
 "type" = "light-yellow"
-"ui.cursor.match" = { fg = "light-yellow", modifiers = ["underlined"] }
 "string"  = "light-green"
 "variable.other.member" = "red"
 "constant.character.escape" = "light-cyan"
@@ -30,6 +35,23 @@
 "label" = "light-magenta"
 "namespace" = "light-magenta"
 
+# git bits
+"diff.plus" = "light-green"
+"diff.delta" = "yellow"
+"diff.minus" = "light-red"
+
+# the "you did something wrong" bits
+"diagnostic" = { modifiers = ["underlined"] }
+"info" = "light-blue"
+"hint" = "gray"
+"debug" = "gray"
+"warning" = "yellow"
+"error" = "light-red"
+
+# the C bits that look like python comments
+"keyword.directive" = { fg ="yellow", modifiers = ["italic"] }
+
+# markup bits
 "markup.heading" = "light-blue"
 "markup.list" = "light-red"
 "markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }
@@ -40,24 +62,9 @@
 "markup.quote" = "light-cyan"
 "markup.raw" = "light-green"
 
-"diff.plus" = "light-green"
-"diff.delta" = "yellow"
-"diff.minus" = "light-red"
-
-"diagnostic" = { modifiers = ["underlined"] }
-# "ui.gutter" = { bg = "black" }
-"info" = "light-blue"
-"hint" = "gray"
-"debug" = "gray"
-"warning" = "yellow"
-"error" = "light-red"
-
-"ui.virtual.indent-guide" = "black"
-"keyword.directive" = { fg ="yellow", modifiers = ["italic"] }
-
-"ui.virtual.inlay-hint" = { fg = "faded", modifiers = ["italic"] }
-
+# and the few colors that arent base 16
 [palette]
+text-default = "#c9c9c9"
 faded = "#3d3d4a"
 comment = "#616175" #"#68688c"
 subtle-back = "#1e1e24"
