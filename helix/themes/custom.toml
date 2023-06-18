@@ -1,13 +1,15 @@
 # My custom little helix theme, mostly based off base16_terminal
 
 # The ui elements are in the order they appear in documentation
+"ui.background" = "comment"
 "ui.cursor" = { bg = "comment" }
-"ui.cursor.match" = { fg = "light-yellow", modifiers = ["underlined"] }
+"ui.cursor.match" = { bg = "faded" }
 "ui.linenr" = "faded"
 "ui.linenr.selected" = { fg = "comment", modifiers = ["bold"] }
 "ui.statusline" = { fg = "comment", bg = "subtle-back", modifiers = ["bold"] }
 "ui.statusline.inactive" = { fg = "gray", bg = "subtle-back" }
-"ui.popup" = { bg = "black" }
+"ui.popup" = { fg = "comment", bg = "subtle-back" }
+"ui.popup.info" = { fg = "comment", bg = "subtle-back" }
 "ui.window" = { bg = "black" }
 "ui.help" = { fg = "comment", bg = "subtle-back" }
 "ui.text" = "text-default"
