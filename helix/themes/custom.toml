@@ -2,7 +2,7 @@
 
 # The ui elements are in the order they appear in documentation
 "ui.background" = "comment"
-"ui.cursor" = { bg = "comment" }
+"ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursor.match" = { bg = "faded" }
 "ui.linenr" = "faded"
 "ui.linenr.selected" = { fg = "comment", modifiers = ["bold"] }
