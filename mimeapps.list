@@ -73,6 +73,8 @@ audio/flac=mpv.desktop
 audio/mp3=mpv.desktop
 audio/wav=mpv.desktop
 audio/aaic=mpv.desktop
+application/terminal=kitty.desktop
+applications/terminal=kitty.desktop
 
 [Added Associations]
 image/jpeg=userapp-set-wallpaper-76BXV1.desktop;meh.desktop;feh.desktop;
