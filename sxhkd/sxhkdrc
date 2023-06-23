@@ -108,11 +108,7 @@ super + ctrl + a
 
 # screenshot
 super + shift + s
-	screenshot
-
-# Copy visual text
-super + shift + t
-	ocr
+	~/.config/bspwm/screenshot.sh
 
 # mpd 
 {XF86AudioPlay,XF86AudioNext,XF86AudioPrev}
