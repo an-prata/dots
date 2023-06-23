@@ -17,7 +17,7 @@ super + Escape
 
 # Layout switch
 super + i
-	layout-switch.sh
+	~/.config/bspwm/layout-switch.sh
 
 #
 # bspwm hotkeys
