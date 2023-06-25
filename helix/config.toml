@@ -15,7 +15,7 @@ hidden = false
 [editor.statusline]
 separator = "|"
 left = ["mode", "separator", "spacer", "version-control", "spacer", "diagnostics", "spinner"]
-center = ["file-base-name", "spinner"]
+center = ["file-base-name"]
 right = ["position", "separator", "spacer", "position-percentage", "spacer", "separator", "file-type", "separator", "file-line-ending"]
 mode.normal = "normal"
 mode.insert = "insert"
