@@ -21,8 +21,8 @@ mode.normal = "normal"
 mode.insert = "insert"
 mode.select = "select"
 
-[editor.lsp]
-display-inlay-hints = true
+# [editor.lsp]
+# display-inlay-hints = true
 
 [editor.indent-guides]
 render = true
