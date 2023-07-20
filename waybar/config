@@ -36,9 +36,9 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
-        "format": "{capacity} {icon}",
-        "format-charging": "charging {capacity} {icon}",
-        "format-plugged": "",
+        "format": "battery {icon} {capacity}",
+        "format-charging": "charging {icon} {capacity}",
+        "format-plugged": "battery {icon} {capacity}",
         "format-alt": "{time} {icon}",
         "format-icons": [" ", " ", " ", " ", " "]
     },
@@ -47,12 +47,12 @@
     },
     "pulseaudio": {
         "scroll-step": 0.1, // %, can be a float
-        "format": "volume {volume}  {icon}",
+        "format": "volume {icon} {volume}",
         "format-bluetooth": "volume {icon} {volume} ",
         "format-bluetooth-muted": "muted  {icon} ",
         "format-muted": "muted  ",
         "format-icons": {
-            "default": [" ", " ", " "]
+            "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
     },
