@@ -1,0 +1,60 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 34, // Waybar height (to be removed for auto height)
+    "spacing": 4, // Gaps between modules (4px)
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["mpd"],
+    "modules-right": ["pulseaudio", "battery", "battery#bat2", "clock"],
+    "wlr/workspaces": {
+        "format": " {icon} ",
+        "format-active": " {icon} ",
+        "on-click": "activate"
+    },
+    "mpd": {
+        "format": "{stateIcon} 󰎉 {artist} - {title} ",
+        "format-disconnected": "Disconnected 󰎉",
+        "format-stopped": "Stopped 󰎉",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "state-icons": {
+            "paused": "paused ",
+            "playing": "playing "
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%A %B %d}"
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "format": "{capacity} {icon}",
+        "format-charging": "charging {capacity} {icon}",
+        "format-plugged": "",
+        "format-alt": "{time} {icon}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "pulseaudio": {
+        "scroll-step": 0.1, // %, can be a float
+        "format": "{volume}  {icon}",
+        "format-bluetooth": "{volume}  {icon} ",
+        "format-bluetooth-muted": "muted  {icon} ",
+        "format-muted": "muted  ",
+        "format-icons": {
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+}
+
