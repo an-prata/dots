@@ -5,7 +5,7 @@
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["mpd"],
-    "modules-right": ["pulseaudio", "battery", "battery#bat2", "clock"],
+    "modules-right": ["pulseaudio", "battery", "custom/clock"],
     "wlr/workspaces": {
         "format": " {icon} ",
         "format-active": " {icon} ",
@@ -24,11 +24,9 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
-    "clock": {
-        // "timezone": "America/New_York",
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%A %B %d}"
+    "custom/clock": {
+        "exec": "date +' %-l:%M %P '",
+        "interval": 0.5
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -41,9 +39,6 @@
         "format-plugged": "battery {icon} {capacity}",
         "format-alt": "{time} {icon}",
         "format-icons": [" ", " ", " ", " ", " "]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "pulseaudio": {
         "scroll-step": 0.1, // %, can be a float
