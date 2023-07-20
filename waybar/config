@@ -28,11 +28,6 @@
         "exec": "date +' %-l:%M %P '",
         "interval": 0.5
     },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
     "battery": {
         "format": "battery {icon} {capacity}",
         "format-charging": "charging {icon} {capacity}",
