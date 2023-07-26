@@ -9,7 +9,9 @@
     "wlr/workspaces": {
         "format": " {icon} ",
         "format-active": " {icon} ",
-        "on-click": "activate"
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true
     },
     "mpd": {
         "format": "{stateIcon} 󰎉 {artist} - {title} ",
