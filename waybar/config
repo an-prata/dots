@@ -45,7 +45,7 @@
     "image": {
         "exec": "~/.config/waybar/scripts/media-art.sh",
         "interval": 1,
-        "size": 108
+        "size": 112
     },
     "custom/media": {
         "exec": "~/.config/waybar/scripts/media.sh",

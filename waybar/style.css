@@ -123,9 +123,8 @@ label:focus {
 }
 
 #image {
-    border-radius: 14px;
     margin: 4px;
-    padding-right: 0px;
+    padding-right: 7px;
     padding-left: 7px;
 }
 
