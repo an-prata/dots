@@ -1,12 +1,35 @@
 #!/usr/bin/env bash
 
-playerStatus=$(playerctl -l --no-messages)
+PLAYER_SAVE="/tmp/waybar-media-player"
+PLAYER_MPD="--player=mpd"
+PLAYER_FIREFOX=""
 
-txt="$(playerctl status --no-messages) 󰎉 $(playerctl metadata --format '{{artist}}') - $(playerctl metadata --format '{{title}}')"
+if [ ! -f $PLAYER_SAVE ]; then
+  touch $PLAYER_SAVE
+fi
+
+player=$(cat $PLAYER_SAVE)
+status=$(playerctl $player status)
+
+if [ "$status" != "Playing" ]; then
+  if [ "$player" == "$PLAYER_MPD" ]; then
+    if [ "$(playerctl $PLAYER_FIREFOX status)" == "Playing" ]; then
+      player=$PLAYER_FIREFOX
+    fi
+  elif [ "$player" == "$PLAYER_FIREFOX" ]; then
+    if [ "$(playerctl $PLAYER_MPD status)" == "Playing" ]; then
+      player=$PLAYER_MPD
+    fi
+  fi
+fi
+
+echo $player > $PLAYER_SAVE
+
+txt="$(playerctl $player status --no-messages) 󰎉 $(playerctl $player metadata --format '{{artist}}') - $(playerctl $player metadata --format '{{title}}')"
 tt=$txt
 
 # cut off strings longer than 64 chars
-if [ ${#txt} > 64 ]; then
+if (( ${#txt} > 64 )); then
   txt="$(echo $txt | cut -c -61)..."
 fi
 
