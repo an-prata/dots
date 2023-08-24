@@ -1,7 +1,6 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrainsMono NF;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
     padding: 0;
     margin: 0;
@@ -24,16 +23,26 @@ button:hover {
 }
 
 #workspaces button {
+    border-radius: 14px;
     margin: 4px;
     padding-right: 7px;
     padding-left: 7px;
+    font-family: JetBrainsMono NF;
+    font-size: 10px;
+    letter-spacing: 1px;
+    background-color: #17171c;
+    color: #f2f2e9;
+    border: none;
 }
 
 #workspaces button:hover {
+    background-color: #b886d1;
 }
 
 #workspaces button.active {
-    background-color: #cca37a;
+    background-color: #f2f2e9;
+    color: #17171c;
+    min-width: 46px;
 }
 
 #workspaces button.urgent {
@@ -42,8 +51,7 @@ button:hover {
 
 #clock,
 #battery,
-#pulseaudio,
-#mpd {
+#pulseaudio {
     border-radius: 4px;
     padding: 0 8px;
     background: rgba(0, 0, 0, 0);
@@ -105,7 +113,20 @@ label:focus {
 #wireplumber.muted {
 }
 
-#mpd {
+#custom-media {
+    border-radius: 14px;
+    margin: 4px;
+    padding-right: 7px;
+    padding-left: 7px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+#image {
+    border-radius: 14px;
+    margin: 4px;
+    padding-right: 0px;
+    padding-left: 7px;
 }
 
 #mpd.disconnected {
