@@ -21,5 +21,23 @@ fi
 
 magick $IMAGE_PATH "$HOME/.config/waybar/mask.png" -alpha Off -compose CopyOpacity -composite $IMAGE_PATH
 echo $IMAGE_PATH
-echo "$(playerctl metadata --format '{{artist}}') - $(playerctl metadata --format '{{album}}')"
+
+artist=$(playerctl $player metadata --format '{{artist}}')
+title=$(playerctl $player metadata --format '{{album}}')
+
+if [ "$title" == "" ]; then
+  title=$(playerctl $player metadata --format '{{title}}')
+fi
+
+if [ "$artist" == "" ] && [ "$title" != "" ]; then
+  txt="$title"
+elif [ "$artist" != "" ] && [ "$title" == "" ]; then
+  txt="$artist"
+elif [ "$artist" != "" ] && [ "$title" != "" ]; then
+  txt="$artist | $title"
+else
+  txt=""
+fi
+
+echo $txt
 

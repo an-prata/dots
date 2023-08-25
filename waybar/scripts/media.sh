@@ -2,6 +2,7 @@
 
 PLAYER_SAVE="/tmp/waybar-media-player"
 PLAYER_MPD="--player=mpd"
+PLAYER_MPV="--player=mpv"
 PLAYER_FIREFOX=""
 
 if [ ! -f $PLAYER_SAVE ]; then
@@ -12,20 +13,31 @@ player=$(cat $PLAYER_SAVE)
 status=$(playerctl $player status)
 
 if [ "$status" != "Playing" ]; then
-  if [ "$player" == "$PLAYER_MPD" ]; then
-    if [ "$(playerctl $PLAYER_FIREFOX status)" == "Playing" ]; then
-      player=$PLAYER_FIREFOX
-    fi
-  elif [ "$player" == "$PLAYER_FIREFOX" ]; then
-    if [ "$(playerctl $PLAYER_MPD status)" == "Playing" ]; then
-      player=$PLAYER_MPD
-    fi
+  if [ "$(playerctl $PLAYER_FIREFOX status)" == "Playing" ]; then
+    player=$PLAYER_FIREFOX
+  elif [ "$(playerctl $PLAYER_MPD status)" == "Playing" ]; then
+    player=$PLAYER_MPD
+  elif [ "$(playerctl $PLAYER_MPV status)" == "Playing" ]; then
+    player=$PLAYER_MPV
   fi
 fi
 
 echo $player > $PLAYER_SAVE
 
-txt="$(playerctl $player status --no-messages) 󰎉 $(playerctl $player metadata --format '{{artist}}') - $(playerctl $player metadata --format '{{title}}')"
+status=$(playerctl $player status)
+artist=$(playerctl $player metadata --format '{{artist}}')
+title=$(playerctl $player metadata --format '{{title}}')
+
+if [ "$artist" == "" ] && [ "$title" != "" ]; then
+  txt="$(playerctl $player status --no-messages) 󰎉 $title"
+elif [ "$artist" != "" ] && [ "$title" == "" ]; then
+  txt="$(playerctl $player status --no-messages) 󰎉 $artist"
+elif [ "$artist" != "" ] && [ "$title" != "" ]; then
+  txt="$(playerctl $player status --no-messages) 󰎉 $artist | $title"
+else
+  txt="$(playerctl $player status --no-messages) 󰎉"
+fi
+
 tt=$txt
 
 # cut off strings longer than 64 chars
