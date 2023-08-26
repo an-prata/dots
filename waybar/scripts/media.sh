@@ -22,6 +22,16 @@ if [ "$status" != "Playing" ]; then
   fi
 fi
 
+if [ "$status" == "Stopped" ]; then
+  if [ "$(playerctl $PLAYER_FIREFOX status)" != "Stopped" ]; then
+    player=$PLAYER_FIREFOX
+  elif [ "$(playerctl $PLAYER_MPD status)" != "Stopped" ]; then
+    player=$PLAYER_MPD
+  elif [ "$(playerctl $PLAYER_MPV status)" != "Stopped" ]; then
+    player=$PLAYER_MPV
+  fi
+fi
+
 echo $player > $PLAYER_SAVE
 
 status=$(playerctl $player status)
