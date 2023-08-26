@@ -9,7 +9,7 @@ player=$(cat $PLAYER_SAVE)
 
 # produce a new mask is one is missing
 if [ ! -f "$HOME/.config/waybar/mask.png" ]; then
-  convert -size 128x32 xc:black -fill white -draw "roundRectangle 0,0,128,32 16,16" "$HOME/.config/waybar/mask.png"
+  convert -size 128x32 xc:black -fill white -draw "roundRectangle 0,0,126,32,16,16" "$HOME/.config/waybar/mask.png"
 fi
 
 img=$(echo "$(playerctl $player metadata | grep artUrl | awk '{print $3}')" | cut -c 7-)
