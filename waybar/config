@@ -4,7 +4,7 @@
     "height": 34, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
     // "modules-left": ["mpd"],
-    "modules-left": ["custom/media"],
+    "modules-left": ["custom/layout-master", "custom/layout-dwindle", "custom/media"],
     "modules-center": ["wlr/workspaces"],
     "modules-right": ["pulseaudio", "battery", "custom/clock"],
     "wlr/workspaces": {
@@ -51,6 +51,18 @@
         "exec": "~/.config/waybar/scripts/media.sh",
         "on-click": "~/.config/waybar/scripts/media-player-cmd.sh play-pause",
         "on-click-right": "mpc toggle",
+        "interval": 1
+    },
+    "custom/layout-master": {
+        "exec": "~/.config/hypr/scripts/layout-switch.sh master",
+        "exec-on-event": false,
+        "on-click": "~/.config/hypr/scripts/layout-switch.sh",
+        "interval": 1
+    },
+    "custom/layout-dwindle": {
+        "exec": "~/.config/hypr/scripts/layout-switch.sh dwindle",
+        "exec-on-event": false,
+        "on-click": "~/.config/hypr/scripts/layout-switch.sh",
         "interval": 1
     },
     "battery": {

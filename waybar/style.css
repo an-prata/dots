@@ -30,13 +30,15 @@ button:hover {
     font-family: JetBrainsMono NF;
     font-size: 10px;
     letter-spacing: 1px;
-    background-color: #17171c;
+    background-color: #7ab1cc;
     color: #f2f2e9;
     border: none;
+    min-width: 36px;
 }
 
 #workspaces button:hover {
     background-color: #b886d1;
+    min-width: 24px;
 }
 
 #workspaces button.active {
@@ -120,6 +122,32 @@ label:focus {
     padding-left: 7px;
     letter-spacing: 1px;
     border: none;
+}
+
+#custom-layout-master,
+#custom-layout-dwindle {
+    transition-property: min-width;
+    transition-duration: .2s;
+    border-radius: 14px;
+    margin: 4px;
+    padding-right: 7px;
+    padding-left: 4px;
+    background-color: #7ab1cc;
+    color: #f2f2e9;
+    border: none;
+    min-width: 32px;
+}
+
+#custom-layout-dwindle.active {
+    background-color: #f2f2e9;
+    color: #17171c;
+    min-width: 46px;
+}
+
+#custom-layout-master.active {
+    background-color: #f2f2e9;
+    color: #17171c;
+    min-width: 46px;
 }
 
 #image {
