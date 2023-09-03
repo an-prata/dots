@@ -23,6 +23,8 @@ button:hover {
 }
 
 #workspaces button {
+    transition-property: min-width;
+    transition-duration: .2s;
     border-radius: 14px;
     margin: 4px;
     padding-right: 7px;
