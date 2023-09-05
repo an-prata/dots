@@ -5,9 +5,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // "modules-left": ["mpd"],
     "modules-left": ["custom/layout-master", "custom/layout-dwindle", "custom/media"],
-    "modules-center": ["wlr/workspaces"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "battery", "custom/clock"],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": " {icon} ",
         "format-active": " {icon} ",
         "format-icons": {
