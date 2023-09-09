@@ -13,3 +13,6 @@ name = "c"
 file-types = ["c", "h"]
 indent = { tab-width = 4, unit = "\t" }
 
+[[language]]
+name = "haskell"
+indent = { tab-width = 4, unit = "  " }

@@ -2,6 +2,7 @@ theme = "custom"
 
 [editor]
 line-number = "relative"
+idle-timeout = 100
 # mouse = false
 
 [editor.cursor-shape]
@@ -31,3 +32,4 @@ skip-levels = 1
 
 [editor.soft-wrap]
 enable = true
+
