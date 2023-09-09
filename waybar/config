@@ -4,7 +4,7 @@
     "height": 34, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
     // "modules-left": ["mpd"],
-    "modules-left": ["custom/layout-master", "custom/layout-dwindle", "custom/media"],
+    "modules-left": ["custom/layout", "custom/media"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "battery", "custom/clock"],
     "hyprland/workspaces": {
@@ -53,15 +53,9 @@
         "on-click-right": "mpc toggle",
         "interval": 1
     },
-    "custom/layout-master": {
-        "exec": "~/.config/hypr/scripts/layout-switch.sh master",
-        "exec-on-event": false,
-        "on-click": "~/.config/hypr/scripts/layout-switch.sh",
-        "interval": 1
-    },
-    "custom/layout-dwindle": {
-        "exec": "~/.config/hypr/scripts/layout-switch.sh dwindle",
-        "exec-on-event": false,
+    "custom/layout": {
+        "exec": "~/.config/hypr/scripts/layout-switch.sh get",
+        "exec-on-event": true,
         "on-click": "~/.config/hypr/scripts/layout-switch.sh",
         "interval": 1
     },

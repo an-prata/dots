@@ -126,30 +126,17 @@ label:focus {
     border: none;
 }
 
-#custom-layout-master,
-#custom-layout-dwindle {
+#custom-layout {
     transition-property: min-width;
     transition-duration: .2s;
     border-radius: 14px;
     margin: 4px;
-    padding-right: 7px;
-    padding-left: 4px;
-    background-color: #7ab1cc;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color:  #b886d1;
     color: #f2f2e9;
     border: none;
     min-width: 32px;
-}
-
-#custom-layout-dwindle.active {
-    background-color: #f2f2e9;
-    color: #17171c;
-    min-width: 46px;
-}
-
-#custom-layout-master.active {
-    background-color: #f2f2e9;
-    color: #17171c;
-    min-width: 46px;
 }
 
 #image {
