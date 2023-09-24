@@ -8,8 +8,6 @@ case $LAYOUT in
     echo "Master"
   else
     hyprctl keyword general:layout dwindle
-    pkill -RTMIN+2 waybar
-    pkill -RTMIN+1 waybar
   fi
 
   # notify-send -a Hyprland -i "$HOME/.config/hypr/assets/hyprland.png" "Layout" "Dwindle"
@@ -19,11 +17,11 @@ case $LAYOUT in
     echo "Dwindle"
   else
     hyprctl keyword general:layout master
-    pkill -RTMIN+2 waybar
-    pkill -RTMIN+1 waybar
   fi
+
   # notify-send -a Hyprland -i "$HOME/.config/hypr/assets/hyprland.png" "Layout" "Master"
   ;;
 *) ;;
 esac
 
+pkill -RTMIN+2 waybar

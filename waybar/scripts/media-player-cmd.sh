@@ -6,3 +6,5 @@ PLAYER_SAVE="/tmp/waybar-media-player"
 player=$(cat $PLAYER_SAVE)
 
 playerctl $player $1
+pkill -RTMIN+1 waybar
+

@@ -9,8 +9,6 @@
 window#waybar {
     background-color: rgba(23, 23, 28, 0.6);
     color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
     box-shadow: inset 0 -1px #323232;
 }
 
@@ -32,7 +30,7 @@ button:hover {
     font-family: JetBrainsMono NF;
     font-size: 10px;
     letter-spacing: 1px;
-    background-color: #7ab1cc;
+    background-color: #7a96cc;
     color: #f2f2e9;
     border: none;
     min-width: 36px;
@@ -127,13 +125,11 @@ label:focus {
 }
 
 #custom-layout {
-    transition-property: min-width;
-    transition-duration: .2s;
     border-radius: 14px;
     margin: 4px;
     padding-right: 12px;
     padding-left: 12px;
-    background-color:  #b886d1;
+    background-color:  #7a96cc;
     color: #f2f2e9;
     border: none;
     min-width: 32px;

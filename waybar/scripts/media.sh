@@ -53,6 +53,8 @@ tt=$txt
 # cut off strings longer than 64 chars
 if (( ${#txt} > 64 )); then
   txt="$(echo $txt | cut -c -61)..."
+elif [ "$txt" = " 󰎉" ]; then
+  txt="No Media Playing 󰎉 :("
 fi
 
 # escape ampersands

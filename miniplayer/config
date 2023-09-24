@@ -7,3 +7,5 @@ bar_color		= auto
 time_color		= secondary
 accent_color	= auto
 
+[art]
+image_method	= kitty
