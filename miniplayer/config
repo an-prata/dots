@@ -8,4 +8,4 @@ time_color		= secondary
 accent_color	= auto
 
 [art]
-image_method	= kitty
+image_method	= pixcat
