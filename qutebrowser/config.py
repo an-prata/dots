@@ -138,6 +138,14 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
+# Allow locally loaded documents to access remote URLs.
+# Type: Bool
+config.set('content.local_content_can_access_remote_urls', True, 'file:///home/evan/.local/share/qutebrowser/userscripts/*')
+
+# Allow locally loaded documents to access other local URLs.
+# Type: Bool
+config.set('content.local_content_can_access_file_urls', False, 'file:///home/evan/.local/share/qutebrowser/userscripts/*')
+
 # Height (in pixels or as percentage of the window) of the completion.
 # Type: PercOrInt
 c.completion.height = '20%'
@@ -158,12 +166,12 @@ c.completion.timestamp_format = None
 # Directory to save downloads to. If unset, a sensible OS-specific
 # default is used.
 # Type: Directory
-c.downloads.location.directory = '/home/evan/Downloads'
+c.downloads.location.directory = '/tmp/Temporary Downloads'
 
 # Prompt the user for the download location. If set to false,
 # `downloads.location.directory` will be used.
 # Type: Bool
-c.downloads.location.prompt = False
+c.downloads.location.prompt = True
 
 # Remember the last used download directory.
 # Type: Bool
@@ -189,7 +197,7 @@ c.downloads.position = 'bottom'
 # Duration (in milliseconds) to wait before removing finished downloads.
 # If set to -1, downloads are never removed.
 # Type: Int
-c.downloads.remove_finished = 200
+c.downloads.remove_finished = 5000
 
 # Editor (and arguments) to use for the `edit-*` commands. The following
 # placeholders are defined:  * `{file}`: Filename of the file to be
@@ -201,9 +209,10 @@ c.downloads.remove_finished = 200
 c.editor.command = ['kitty', '-e', 'helix', '{file}']
 
 # Handler for selecting file(s) in forms. If `external`, then the
-# commands specified by `fileselect.single_file.command` and
-# `fileselect.multiple_files.command` are used to select one or multiple
-# files respectively.
+# commands specified by `fileselect.single_file.command`,
+# `fileselect.multiple_files.command` and `fileselect.folder.command`
+# are used to select one file, multiple files, and folders,
+# respectively.
 # Type: String
 # Valid values:
 #   - default: Use the default file selector.
@@ -237,7 +246,11 @@ c.fileselect.folder.command = ['kitty', '-e', 'ranger', '--choosedir={}']
 
 # Show a filebrowser in download prompts.
 # Type: Bool
-c.prompt.filebrowser = False
+c.prompt.filebrowser = True
+
+# Rounding radius (in pixels) for the edges of prompts.
+# Type: Int
+c.prompt.radius = 4
 
 # When/how to show the scrollbar.
 # Type: String
@@ -272,10 +285,12 @@ c.statusbar.padding = {'bottom': 5, 'left': 12, 'right': 5, 'top': 12}
 #   - scroll: Percentage of the current page position like `10%`.
 #   - scroll_raw: Raw percentage of the current page position like `10`.
 #   - history: Display an arrow when possible to go back/forward in history.
+#   - search_match: A match count when searching, e.g. `Match [2/10]`.
 #   - tabs: Current active tab, e.g. `2`.
 #   - keypress: Display pressed keys when composing a vi command.
 #   - progress: Progress bar for the current page loading.
 #   - text:foo: Display the static text after the colon, `foo` in the example.
+#   - clock: Display current time. The format can be changed by adding a format string via `clock:...`. For supported format strings, see https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes[the Python datetime documentation].
 c.statusbar.widgets = ['keypress']
 
 # When to show favicons in the tab bar. When switching this from never
@@ -383,13 +398,25 @@ c.colors.downloads.bar.bg = '#17171C'
 # Type: QtColor
 c.colors.downloads.start.fg = '#f2f2e9'
 
+# Color gradient start for download backgrounds.
+# Type: QtColor
+c.colors.downloads.start.bg = '#cca37a'
+
 # Color gradient end for download text.
 # Type: QtColor
 c.colors.downloads.stop.fg = '#f2f2e9'
 
+# Color gradient stop for download backgrounds.
+# Type: QtColor
+c.colors.downloads.stop.bg = '#b1cc7a'
+
 # Foreground color for downloads with errors.
 # Type: QtColor
 c.colors.downloads.error.fg = '#f2f2e9'
+
+# Background color for downloads with errors.
+# Type: QtColor
+c.colors.downloads.error.bg = '#cc7a7a'
 
 # Font color for hints.
 # Type: QssColor
@@ -419,9 +446,17 @@ c.colors.prompts.fg = '#f2f2e9'
 # Type: String
 c.colors.prompts.border = '0px solid gray'
 
+# Background color for prompts.
+# Type: QssColor
+c.colors.prompts.bg = '#17171c'
+
 # Foreground color for the selected item in filename prompts.
 # Type: QssColor
 c.colors.prompts.selected.fg = '#f2f2e9'
+
+# Background color for the selected item in filename prompts.
+# Type: QssColor
+c.colors.prompts.selected.bg = '#cca37a'
 
 # Foreground color of the statusbar.
 # Type: QssColor
@@ -591,6 +626,8 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 # `colors.webpage.darkmode.threshold.text` to 150 and
 # `colors.webpage.darkmode.threshold.background` to 205.  - "With
 # selective inversion of everything": Combines the two variants   above.
+# - "With increased text contrast": Set
+# `colors.webpage.darkmode.increase_text_contrast` (QtWebEngine 6.3+)
 # Type: Bool
 c.colors.webpage.darkmode.enabled = False
 
@@ -618,3 +655,11 @@ c.colors.webpage.darkmode.policy.page = 'always'
 # empty value, a system-specific monospace default is used.
 # Type: List of Font, or Font
 c.fonts.default_family = 'JetBrainsMono Nerd Font'
+
+# Font used for the downloadbar.
+# Type: Font
+c.fonts.downloads = 'default_size default_family'
+
+# Font used for prompts.
+# Type: Font
+c.fonts.prompts = 'default_size default_family'
