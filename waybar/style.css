@@ -30,14 +30,14 @@ button:hover {
     font-family: JetBrainsMono NF;
     font-size: 10px;
     letter-spacing: 1px;
-    background-color: #7a96cc;
+    background-color: #b1cc7a;
     color: #f2f2e9;
     border: none;
     min-width: 36px;
 }
 
 #workspaces button:hover {
-    background-color: #b886d1;
+    background-color: #7a96cc;
     min-width: 24px;
 }
 
@@ -129,7 +129,7 @@ label:focus {
     margin: 4px;
     padding-right: 12px;
     padding-left: 12px;
-    background-color:  #7a96cc;
+    background-color:  #cca37a;
     color: #f2f2e9;
     border: none;
     min-width: 32px;
