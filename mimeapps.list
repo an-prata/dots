@@ -25,7 +25,7 @@ text/x-makefile=helix.desktop
 text/x-csrc=helix.desktop
 text/x-c++src=helix.desktop
 text/javascript=nvim-kitty.desktop
-text/html=abiword.desktop
+text/html=org.qutebrowser.qutebrowser.desktop
 text/css=nvim-kitty.desktop
 text/x-python=nvim-kitty.desktop
 application/x-abiword=abiword.desktop
@@ -75,6 +75,10 @@ audio/wav=mpv.desktop
 audio/aaic=mpv.desktop
 application/terminal=kitty.desktop
 applications/terminal=kitty.desktop
+x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
 
 [Added Associations]
 image/jpeg=userapp-set-wallpaper-76BXV1.desktop;meh.desktop;feh.desktop;

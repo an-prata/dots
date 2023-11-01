@@ -6,5 +6,15 @@
 
 config_version: 2
 settings:
-  downloads.location.directory:
-    global: /tmp/Temporary Downloads
+  colors.contextmenu.disabled.bg:
+    global: null
+  colors.contextmenu.disabled.fg:
+    global: '#555555'
+  colors.contextmenu.menu.bg:
+    global: '#17171c'
+  colors.contextmenu.menu.fg:
+    global: '#f2f2e9'
+  colors.contextmenu.selected.bg:
+    global: '#b1cc7a'
+  colors.contextmenu.selected.fg:
+    global: '#f2f2e9'
