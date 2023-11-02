@@ -122,6 +122,15 @@ label:focus {
     min-width: 32px;
 }
 
+#custom-window-start {
+    margin: 4px;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: #cca37a;
+    border: none;
+    min-width: 32px;
+}
+
 #image {
     margin: 4px;
     padding-right: 7px;

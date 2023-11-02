@@ -3,7 +3,7 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 34, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
-    "modules-left": ["custom/layout", "custom/media"],
+    "modules-left": ["custom/layout", "custom/window-start", "custom/media"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "battery", "custom/clock"],
     "hyprland/workspaces": {
@@ -59,6 +59,12 @@
         "on-click": "~/.config/hypr/scripts/layout-switch.sh",
         "interval": 1,
         // "signal": 2
+    },
+    "custom/window-start": {
+        "exec": "~/.config/hypr/scripts/window-start.sh get",
+        "exec-on-event": true,
+        "on-click": "~/.config/hypr/scripts/window-start.sh",
+        "interval": 1,
     },
     "battery": {
         "format": "battery {icon} {capacity}",
