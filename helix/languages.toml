@@ -6,7 +6,10 @@ file-types = ["cs"]
 roots = ["sln", "csproj"]
 comment-token = "//"
 indent = { tab-width = 4, unit = "\t" }
-language-server = { command = "omnisharp", args = [ "--languageserver" ] }
+
+[language-server.c-sharp]
+command = "omnisharp"
+args = [ "--languageserver" ]
 
 [[language]]
 name = "c"
