@@ -6,15 +6,30 @@
 
 config_version: 2
 settings:
-  colors.contextmenu.disabled.bg:
-    global: null
-  colors.contextmenu.disabled.fg:
-    global: '#555555'
-  colors.contextmenu.menu.bg:
-    global: '#17171c'
-  colors.contextmenu.menu.fg:
+  colors.completion.category.bg:
+    global: '#17171C'
+  colors.completion.category.border.bottom:
+    global: '#17171C'
+  colors.completion.even.bg:
+    global: '#17171C'
+  colors.completion.fg:
+    global:
+    - '#f2f2e9'
+    - '#f2f2e9'
+    - '#f2f2e9'
+  colors.completion.item.selected.bg:
+    global: '#3d3d4a'
+  colors.completion.item.selected.border.top:
+    global: '#17171C'
+  colors.completion.item.selected.fg:
     global: '#f2f2e9'
-  colors.contextmenu.selected.bg:
-    global: '#b1cc7a'
-  colors.contextmenu.selected.fg:
-    global: '#f2f2e9'
+  colors.completion.item.selected.match.fg:
+    global: '#cc7a7a'
+  colors.completion.match.fg:
+    global: '#cc7a7a'
+  colors.completion.odd.bg:
+    global: '#17171C'
+  colors.completion.scrollbar.bg:
+    global: '#17171C'
+  colors.completion.scrollbar.fg:
+    global: '#17171C'
