@@ -20,5 +20,6 @@ else
 	echo 'set floating'
 fi
 
+pkill -RTMIN+3 waybar
 
 

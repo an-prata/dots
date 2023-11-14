@@ -57,14 +57,15 @@
         "exec": "~/.config/hypr/scripts/layout-switch.sh get",
         "exec-on-event": true,
         "on-click": "~/.config/hypr/scripts/layout-switch.sh",
-        "interval": 1,
-        // "signal": 2
+        // "interval": 1,
+        "signal": 2
     },
     "custom/window-start": {
         "exec": "~/.config/hypr/scripts/window-start.sh get",
         "exec-on-event": true,
         "on-click": "~/.config/hypr/scripts/window-start.sh",
-        "interval": 1,
+        // "interval": 1,
+        "signal": 3
     },
     "battery": {
         "format": "battery {icon} {capacity}",

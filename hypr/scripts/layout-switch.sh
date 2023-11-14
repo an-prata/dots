@@ -6,6 +6,7 @@ case $LAYOUT in
 "master")
   if [ "$1" == "get" ]; then
     echo "Master"
+    exit
   else
     hyprctl keyword general:layout dwindle
   fi
@@ -15,6 +16,7 @@ case $LAYOUT in
 "dwindle")
   if [ "$1" == "get" ]; then
     echo "Dwindle"
+    exit
   else
     hyprctl keyword general:layout master
   fi
