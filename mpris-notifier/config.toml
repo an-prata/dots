@@ -1,0 +1,6 @@
+subject_format = '{album}'
+body_format = '{track} | {artist}'
+join_string = ', '
+enable_album_art = true
+album_art_deadline = 1000
+commands = [['pkill', '-RTMIN+1', 'waybar']]
