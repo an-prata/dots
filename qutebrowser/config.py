@@ -528,6 +528,10 @@ c.colors.statusbar.insert.bg = '#cca37a'
 # Type: QssColor
 c.colors.statusbar.passthrough.fg = '#f2f2e9'
 
+# Background color of the statusbar in passthrough mode.
+# Type: QssColor
+c.colors.statusbar.passthrough.bg = '#7a96cc'
+
 # Foreground color of the statusbar in private browsing mode.
 # Type: QssColor
 c.colors.statusbar.private.fg = '#f2f2e9'
@@ -612,7 +616,7 @@ c.colors.tabs.selected.odd.fg = '#f2f2e9'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#4b4e52'
+c.colors.tabs.selected.odd.bg = '#37373f'
 
 # Foreground color of selected even tabs.
 # Type: QtColor
@@ -620,7 +624,7 @@ c.colors.tabs.selected.even.fg = '#f2f2e9'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#4b4e52'
+c.colors.tabs.selected.even.bg = '#37373f'
 
 # Foreground color of pinned unselected odd tabs.
 # Type: QtColor
