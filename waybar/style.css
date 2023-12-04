@@ -46,8 +46,12 @@ button:hover {
 #clock,
 #battery,
 #pulseaudio {
-    padding: 0 8px;
     color: #f2f2e9;
+    margin: 4px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border: none;
+    min-width: 32px;
 }
 
 #window,
@@ -107,8 +111,8 @@ label:focus {
 
 #custom-media {
     margin: 4px;
-    padding-right: 7px;
-    padding-left: 7px;
+    padding-right: 12px;
+    padding-left: 12px;
     letter-spacing: 1px;
     border: none;
 }
@@ -123,6 +127,15 @@ label:focus {
 }
 
 #custom-window-start {
+    margin: 4px;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: #cca37a;
+    border: none;
+    min-width: 32px;
+}
+
+#custom-dunst {
     margin: 4px;
     padding-right: 12px;
     padding-left: 12px;

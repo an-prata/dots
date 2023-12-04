@@ -5,7 +5,7 @@
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["custom/layout", "custom/window-start", "custom/media"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "battery", "custom/clock"],
+    "modules-right": ["custom/dunst", "pulseaudio", "battery", "custom/clock"],
     "hyprland/workspaces": {
         "format": " {icon} ",
         "format-active": " {icon} ",
@@ -32,36 +32,39 @@
         "exec": "~/.config/waybar/scripts/media.sh",
         "on-click": "~/.config/waybar/scripts/media-player-cmd.sh play-pause",
         "on-click-right": "mpc toggle",
-        // "interval": 1,
         "signal": 1
     },
     "custom/layout": {
         "exec": "~/.config/hypr/scripts/layout-switch.sh get",
         "exec-on-event": true,
         "on-click": "~/.config/hypr/scripts/layout-switch.sh",
-        // "interval": 1,
         "signal": 2
     },
     "custom/window-start": {
         "exec": "~/.config/hypr/scripts/window-start.sh get",
         "exec-on-event": true,
         "on-click": "~/.config/hypr/scripts/window-start.sh",
-        // "interval": 1,
         "signal": 3
     },
+    "custom/dunst": {
+        "exec": "~/.config/hypr/scripts/dunst.sh get",
+        "exec-on-event": true,
+        "on-click": "~/.config/hypr/scripts/dunst.sh toggle",
+        "signal": 4
+    },
     "battery": {
-        "format": "battery {icon} {capacity}",
-        "format-charging": "charging {icon} {capacity}",
-        "format-plugged": "battery {icon} {capacity}",
-        "format-alt": "{time} {icon}",
+        "format": "Battery {capacity}",
+        "format-charging": "Charging {capacity}",
+        "format-plugged": "Battery {capacity}",
+        "format-alt": "{time}",
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "pulseaudio": {
         "scroll-step": 0.1, // %, can be a float
-        "format": "volume {icon} {volume}",
-        "format-bluetooth": "volume {icon} {volume} ",
-        "format-bluetooth-muted": "muted  ",
-        "format-muted": "muted  ",
+        "format": "Volume {volume}",
+        "format-bluetooth": "Volume {volume}",
+        "format-bluetooth-muted": "Muted",
+        "format-muted": "Muted",
         "format-icons": {
             "default": ["", "", " "]
         },
