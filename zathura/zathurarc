@@ -37,5 +37,12 @@ set statusbar-fg \#f2f2e9
 
 set recolor-darkcolor \#f2f2e9
 set recolor-lightcolor \#17171C
+
+index-active-bg \#f2e0ce
+index-active-fg \#101419
+
+index-bg \#17171C
+index-fg \#f2e0ce
+
 #set recolor
 
