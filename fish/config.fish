@@ -5,4 +5,5 @@ if status is-interactive
     alias mv="mv -v"
     alias rm="rm -rfv"
     alias mkdir="mkdir -p"
+    alias hx="helix"
 end
