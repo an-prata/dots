@@ -397,7 +397,7 @@ progressbar_look = ─╶
 #
 #default_tag_editor_pattern = %n - %t
 #
-header_visibility = yes
+header_visibility = no
 #
 statusbar_visibility = yes
 #
