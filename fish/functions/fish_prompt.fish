@@ -1,6 +1,4 @@
 function fish_prompt
-    set -l __last_command_exit_status $status
-
     if not set -q -g __fish_arrow_functions_defined
         set -g __fish_arrow_functions_defined
         function _git_branch_name
@@ -57,27 +55,29 @@ function fish_prompt
     end
 
     set -l cyan (set_color -o cyan)
-    set -l yellow (set_color -o yellow)
+    set -l yellow (set_color -o -i yellow)
     set -l red (set_color -o red)
-    set -l green (set_color -o green)
+    set -l green (set_color -o -i green)
     set -l blue (set_color -o blue)
     set -l normal (set_color normal)
 
     set -l arrow_color "$normal"
     set -l arrow "$arrow_color-> "
 
-    set -l cwd $blue(basename (prompt_pwd))
+    set -l cwd $blue(basename (prompt_pwd))$normal
 
     set -l repo_info
+
     if set -l repo_type (_repo_type)
-        set -l repo_branch $red(_repo_branch_name $repo_type)
-        set repo_info "$blue $repo_type:($repo_branch$blue)"
+        set -l repo_branch (_repo_branch_name $repo_type)
+        set repo_info "($green$repo_branch$normal)"
 
         if _is_repo_dirty $repo_type
-            set -l dirty "$yellow ✗"
-            set repo_info "$repo_info$dirty"
+            set repo_info "($green* $repo_branch$normal)"
         end
-    end
 
-    echo -n -s $cwd ' ' $arrow ' '
+        echo -n -s $cwd ' ' $repo_info ' ' $arrow ' '
+    else
+        echo -n -s $cwd ' ' $arrow ' '
+    end
 end
