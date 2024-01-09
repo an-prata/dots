@@ -27,5 +27,7 @@ if status is-interactive
     set -x BAT_THEME "ansi"
     set -x MOZ_ENABLE_WAYLAND 1
 
+    set -x GPG_TTY $(tty)
+    
     source ~/.config/fish/secrets.fish
 end
