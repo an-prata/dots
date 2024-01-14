@@ -310,16 +310,16 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#202023"
     foreground = "#f2f2e9"
-    timeout = 6
+    timeout = 0
     # Icon for notifications with low urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    default_icon = /usr/share/icons/Colloid-orange/emblems/22/emblem-information.svg
 
 [urgency_normal]
     background = "#202023"
     foreground = "#f2f2e9"
-    timeout = 6
+    timeout = 0
     # Icon for notifications with normal urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    default_icon = /usr/share/icons/Colloid-orange/emblems/22/emblem-information.svg
 
 [urgency_critical]
     background = "#202023"
@@ -327,7 +327,7 @@
     frame_color = "#ff0000"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    default_icon = /usr/share/icons/Colloid-orange/emblems/22/emblem-information.svg
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
