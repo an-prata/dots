@@ -48,9 +48,9 @@
         "signal": 3
     },
     "custom/dunst": {
-        "exec": "~/.config/hypr/scripts/dunst.sh get",
+        "exec": "~/.config/hypr/scripts/mako.sh get",
         "exec-on-event": true,
-        "on-click": "~/.config/hypr/scripts/dunst.sh toggle",
+        "on-click": "~/.config/hypr/scripts/mako.sh toggle",
         "signal": 4
     },
     "battery": {
