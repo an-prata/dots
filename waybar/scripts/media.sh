@@ -61,6 +61,13 @@ fi
 txt="${txt/&/&amp;}"
 tt="${tt/&/&amp;}"
 
+# escape > and <
+txt="${txt/</\<}"
+tt="${tt/</\<}"
+
+txt="${txt/>/\>}"
+tt="${tt/>/\>}"
+
 echo "$txt"
 echo "$tt"
 echo ""

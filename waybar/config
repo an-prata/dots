@@ -32,6 +32,7 @@
         "exec": "~/.config/waybar/scripts/media.sh",
         "on-click": "~/.config/waybar/scripts/media-player-cmd.sh play-pause",
         "on-click-right": "mpc toggle",
+        "escape": true,
         "signal": 1
     },
     "custom/layout": {
