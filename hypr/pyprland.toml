@@ -1,5 +1,5 @@
 [pyprland]
-plugins = [ "scratchpads", "magnify" ]
+plugins = [ "scratchpads" ]
 
 [scratchpads.term]
 command = "kitty --override background=#26262d --class kitty-scratch"
