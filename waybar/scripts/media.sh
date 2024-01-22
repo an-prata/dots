@@ -58,8 +58,8 @@ elif [ "$txt" = " 󰎉" ]; then
 fi
 
 # escape ampersands
-txt="${txt/&/&amp;}"
-tt="${tt/&/&amp;}"
+# txt="${txt/&/&amp;}"
+# tt="${tt/&/&amp;}"
 
 # escape > and <
 txt="${txt/</\<}"
