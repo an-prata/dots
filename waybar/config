@@ -24,13 +24,12 @@
         "on-click": "activate"
     },
     "custom/clock": {
-        "exec": "if [ -f '/tmp/waybar-show-date' ]; then date +' %A %B %-e %-l:%M %P '; else date +' %-l:%M %P '; fi",
-        // "on-click": "if [ -f '/tmp/waybar-show-date' ]; then rm '/tmp/waybar-show-date'; else touch  '/tmp/waybar-show-date'; fi",
+        "exec": "date +' %-l:%M %P '",
         "interval": 5
     },
     "custom/media": {
-        "exec": "~/.config/waybar/scripts/media.sh",
-        "on-click": "~/.config/waybar/scripts/media-player-cmd.sh play-pause",
+        "exec": "~/.config/hypr/scripts/media.sh",
+        "on-click": "~/.config/hypr/scripts/media-player-cmd.sh play-pause",
         "on-click-right": "mpc toggle",
         "escape": true,
         "signal": 1
