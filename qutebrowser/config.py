@@ -612,19 +612,19 @@ c.colors.tabs.even.bg = '#17171C'
 
 # Foreground color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.fg = '#f2f2e9'
+c.colors.tabs.selected.odd.fg = '#b1cc7a'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#37373f'
+c.colors.tabs.selected.odd.bg = '#17171c'
 
 # Foreground color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.fg = '#f2f2e9'
+c.colors.tabs.selected.even.fg = '#b1cc7a'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#37373f'
+c.colors.tabs.selected.even.bg = '#17171c'
 
 # Foreground color of pinned unselected odd tabs.
 # Type: QtColor
@@ -672,16 +672,10 @@ c.colors.webpage.bg = '#f2f2e9'
 c.colors.webpage.preferred_color_scheme = 'dark'
 
 # Render all web contents using a dark theme. Example configurations
-# from Chromium's `chrome://flags`:  - "With simple HSL/CIELAB/RGB-based
-# inversion": Set   `colors.webpage.darkmode.algorithm` accordingly.  -
-# "With selective image inversion": Set
-# `colors.webpage.darkmode.policy.images` to `smart`.  - "With selective
-# inversion of non-image elements": Set
-# `colors.webpage.darkmode.threshold.text` to 150 and
-# `colors.webpage.darkmode.threshold.background` to 205.  - "With
-# selective inversion of everything": Combines the two variants   above.
-# - "With increased text contrast": Set
-# `colors.webpage.darkmode.increase_text_contrast` (QtWebEngine 6.3+)
+# from Chromium's `chrome://flags`: - "With simple HSL/CIELAB/RGB-based
+# inversion": Set   `colors.webpage.darkmode.algorithm` accordingly, and
+# set `colors.webpage.darkmode.policy.images` to `never`.  - "With
+# selective image inversion": qutebrowser default settings.
 # Type: Bool
 c.colors.webpage.darkmode.enabled = False
 

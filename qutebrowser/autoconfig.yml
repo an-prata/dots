@@ -6,7 +6,11 @@
 
 config_version: 2
 settings:
-  content.notifications.enabled:
-    https://web.skype.com: true
-  content.register_protocol_handler:
-    https://mail.google.com?extsrc=mailto&url=%25s: true
+  colors.tabs.selected.even.bg:
+    global: '#17171c'
+  colors.tabs.selected.even.fg:
+    global: '#b1cc7a'
+  colors.tabs.selected.odd.bg:
+    global: '#17171c'
+  colors.tabs.selected.odd.fg:
+    global: '#b1cc7a'
