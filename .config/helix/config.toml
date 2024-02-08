@@ -1,0 +1,35 @@
+theme = "custom"
+
+[editor]
+line-number = "relative"
+idle-timeout = 100
+# mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+separator = "|"
+left = ["mode", "separator", "spacer", "version-control", "spacer", "diagnostics", "spinner"]
+center = ["file-base-name"]
+right = ["position", "separator", "spacer", "position-percentage", "spacer", "separator", "file-type", "separator", "file-line-ending"]
+mode.normal = "normal"
+mode.insert = "insert"
+mode.select = "select"
+
+# [editor.lsp]
+# display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+

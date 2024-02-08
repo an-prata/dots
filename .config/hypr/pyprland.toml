@@ -1,0 +1,12 @@
+[pyprland]
+plugins = [ "scratchpads" ]
+
+[scratchpads.term]
+command = "kitty --override background=#26262d --class kitty-scratch"
+animation = "fromBottom"
+margin = 50
+unfocus = "hide"
+lazy = true
+size = "50% 30%"
+max_size = "1920px 100%"
+

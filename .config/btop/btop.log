@@ -1,0 +1,18 @@
+
+2022/09/23 (16:35:59) | ===> btop++ v.1.2.9
+2022/09/23 (16:35:59) | ERROR: Invalid RGB decimal value: "ba1a84"
+
+2022/10/10 (22:01:57) | ===> btop++ v.1.2.12
+2022/10/10 (22:01:57) | ERROR: Stall in Runner thread, restarting!
+2022/10/10 (22:02:03) | ERROR: Stall in Runner thread, restarting!
+2022/10/10 (22:02:09) | ERROR: Stall in Runner thread, restarting!
+
+2022/10/20 (17:44:18) | ===> btop++ v.1.2.12
+2022/10/20 (17:44:18) | ERROR: Stall in Runner thread, restarting!
+2022/10/20 (17:44:23) | ERROR: Stall in Runner thread, restarting!
+2022/10/20 (17:44:29) | ERROR: Stall in Runner thread, restarting!
+2022/10/20 (17:44:34) | ERROR: Stall in Runner thread, restarting!
+2022/10/20 (17:44:40) | ERROR: Stall in Runner thread, restarting!
+2022/10/20 (17:44:45) | ERROR: Stall in Runner thread, restarting!
+2022/10/20 (17:44:51) | ERROR: Stall in Runner thread, restarting!
+2022/10/20 (17:44:59) | WARNING: Failed to join _runner thread on exit!

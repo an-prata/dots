@@ -1,0 +1,73 @@
+# My custom little helix theme, mostly based off base16_terminal
+
+# The ui elements are in the order they appear in documentation
+"ui.background" = "comment"
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { bg = "faded" }
+"ui.linenr" = "faded"
+"ui.linenr.selected" = { fg = "comment", modifiers = ["bold"] }
+"ui.statusline" = { fg = "comment", bg = "subtle-back", modifiers = ["bold"] }
+"ui.statusline.inactive" = { fg = "gray", bg = "subtle-back" }
+"ui.popup" = { fg = "comment", bg = "subtle-back" }
+"ui.popup.info" = { fg = "comment", bg = "subtle-back" }
+"ui.window" = { bg = "black" }
+"ui.help" = { fg = "comment", bg = "subtle-back" }
+"ui.text" = "text-default"
+"ui.virtual.whitespace" = "faded"
+"ui.virtual.indent-guide" = "black"
+"ui.virtual.inlay-hint" = { fg = "faded", modifiers = ["italic"] }
+"ui.menu" = { fg = "comment", bg = "subtle-back" }
+"ui.menu.selected" = { modifiers = ["reversed"] }
+"ui.selection" = { bg = "faded" }
+
+# code bits
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "blue"
+"constant.numeric" = "red"
+"constant" = "yellow"
+"attribute" = "yellow"
+"type" = "light-yellow"
+"string"  = "light-green"
+"variable.other.member" = "red"
+"constant.character.escape" = "light-cyan"
+"function" = "cyan"
+"constructor" = "light-blue"
+"special" = "light-blue"
+"keyword" = { fg = "light-magenta", modifiers = ["italic"] }
+"label" = "light-magenta"
+"namespace" = "light-magenta"
+
+# git bits
+"diff.plus" = "light-green"
+"diff.delta" = "yellow"
+"diff.minus" = "light-red"
+
+# the "you did something wrong" bits
+"diagnostic" = { modifiers = ["underlined"] }
+"info" = "light-blue"
+"hint" = "gray"
+"debug" = "gray"
+"warning" = "yellow"
+"error" = "light-red"
+
+# the C bits that look like python comments
+"keyword.directive" = { fg ="yellow", modifiers = ["italic"] }
+
+# markup bits
+"markup.heading" = "light-blue"
+"markup.list" = "light-red"
+"markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "light-magenta", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "yellow", modifiers = ["underlined"] }
+"markup.link.text" = "light-red"
+"markup.quote" = "light-cyan"
+"markup.raw" = "light-green"
+
+# and the few colors that arent base 16
+[palette]
+text-default = "#c9c9c9"
+faded = "#3d3d4a"
+comment = "#616175" #"#68688c"
+subtle-back = "#1e1e24"
+
