@@ -13,6 +13,18 @@
 # Change the argument to True to still load settings configured via autoconfig.yml
 config.load_autoconfig(False)
 
+# Which Chromium process model to use. Alternative process models use
+# less resources, but decrease security and robustness. See the
+# following pages for more details:    -
+# https://www.chromium.org/developers/design-documents/process-models
+# - https://doc.qt.io/qt-6/qtwebengine-features.html#process-models
+# Type: String
+# Valid values:
+#   - process-per-site-instance: Pages from separate sites are put into separate processes and separate visits to the same site are also isolated.
+#   - process-per-site: Pages from separate sites are put into separate processes. Unlike Process per Site Instance, all visits to the same site will share an OS process. The benefit of this model is reduced memory consumption, because more web pages will share processes. The drawbacks include reduced security, robustness, and responsiveness.
+#   - single-process: Run all tabs in a single process. This should be used for debugging purposes only, and it disables `:open --private`.
+c.qt.chromium.process_model = 'process-per-site'
+
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
 # including IndexedDB, DOM storage, filesystem API, service workers, and
@@ -259,7 +271,7 @@ c.prompt.radius = 4
 #   - never: Never show the scrollbar.
 #   - when-searching: Show the scrollbar when searching for text in the webpage. With the QtWebKit backend, this is equal to `never`.
 #   - overlay: Show an overlay scrollbar. On macOS, this is unavailable and equal to `when-searching`; with the QtWebKit backend, this is equal to `never`. Enabling/disabling overlay scrollbars requires a restart.
-c.scrolling.bar = 'never'
+c.scrolling.bar = 'overlay'
 
 # Enable smooth scrolling for web pages. Note smooth scrolling does not
 # work with the `:scroll-px` command.

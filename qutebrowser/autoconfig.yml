@@ -6,11 +6,5 @@
 
 config_version: 2
 settings:
-  colors.tabs.selected.even.bg:
-    global: '#17171c'
-  colors.tabs.selected.even.fg:
-    global: '#b1cc7a'
-  colors.tabs.selected.odd.bg:
-    global: '#17171c'
-  colors.tabs.selected.odd.fg:
-    global: '#b1cc7a'
+  colors.webpage.darkmode.enabled:
+    global: true
