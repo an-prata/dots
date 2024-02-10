@@ -1,4 +1,16 @@
 #!/usr/bin/bash
 
-j4-dmenu-desktop --no-generic --term='kitty' --dmenu="bemenu --center --list 12 --margin 560 --fixed-height --fn 'JetBrainsMono 11' --wrap --nb '#26262d' --ab '#26262d' --hb '#7ab1cc' --fb '#26262d' --tb '#26262d' --nf '#f2f2e9' --af '#f2f2e9' --hf '#f2f2e9' --ff '#f2f2e9' --tf '#f2f2e9' --prompt 'launch:' --ignorecase --prefix '' --line-height 24"
+# close if open, then exit
+if [[ $(pidof bemenu) != '' ]]; then
+  killall bemenu
+  exit
+fi
+
+normal_background='#17171C50'
+
+bemenu_colors="--nb '$normal_background' --ab '$normal_background' --hb '$normal_background' --fb '$normal_background' --tb '$normal_background' --nf '#f2f2e9' --af '#f2f2e9' --hf '#f2f2e9' --ff '#f2f2e9' --tf '#f2f2e9'"
+
+bemenu_options="--center --list 6 --margin 680 --fixed-height --fn 'JetBrainsMono 11' --wrap --prompt '' --ignorecase --prefix '->' --cw 1 --ch 16 --line-height 24"
+
+j4-dmenu-desktop --no-generic --term='kitty' --dmenu="bemenu $bemenu_colors $bemenu_options"
 
