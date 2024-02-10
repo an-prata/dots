@@ -1,2 +1,4 @@
 .config/fish
 .config/lazygit/state.yml
+.config/mpd
+.config/qutebrowser/bookmarks/urls
