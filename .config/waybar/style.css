@@ -25,6 +25,7 @@ button:hover {
     padding-right: 7px;
     padding-left: 7px;
     font-family: JetBrainsMono NF;
+    font-weight: lighter;
     font-size: 10px;
     letter-spacing: 1px;
     color: #f2f2e9;
