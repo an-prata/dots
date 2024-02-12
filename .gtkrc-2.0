@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/evan/.gtkrc-2.0.mine"
-gtk-theme-name="oomox-prata"
-gtk-icon-theme-name="Colloid-orange"
+gtk-theme-name="adw-gtk3"
+gtk-icon-theme-name="Colloid.backup"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Bibata-Modern-Classic"
 gtk-cursor-theme-size=20
@@ -15,5 +15,5 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=0
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintslight"
+gtk-xft-hintstyle="hintfull"
 gtk-xft-rgba="rgb"
