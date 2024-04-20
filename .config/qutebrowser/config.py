@@ -136,6 +136,10 @@ config.set('content.images', True, 'devtools://*')
 
 # Enable JavaScript.
 # Type: Bool
+config.set('content.javascript.enabled', True, 'https://www.lexilogos.com/keyboard/japanese.php#')
+
+# Enable JavaScript.
+# Type: Bool
 config.set('content.javascript.enabled', True, 'chrome-devtools://*')
 
 # Enable JavaScript.
@@ -701,6 +705,15 @@ c.colors.webpage.darkmode.enabled = False
 #   - brightness-rgb: Modify colors by subtracting each of r, g, and b from their maximum value.
 c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
 
+# Which images to apply dark mode to.
+# Type: String
+# Valid values:
+#   - always: Apply dark mode filter to all images.
+#   - never: Never apply dark mode filter to any images.
+#   - smart: Apply dark mode based on image content. Not available with Qt 5.15.0.
+#   - smart-simple: On QtWebEngine 6.6, use a simpler algorithm for smart mode (based on numbers of colors and transparency), rather than an ML-based model. Same as 'smart' on older QtWebEnigne versions.
+c.colors.webpage.darkmode.policy.images = 'smart'
+
 # Which pages to apply dark mode to. The underlying Chromium setting has
 # been removed in QtWebEngine 5.15.3, thus this setting is ignored
 # there. Instead, every element is now classified individually.
@@ -708,7 +721,23 @@ c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
 # Valid values:
 #   - always: Apply dark mode filter to all frames, regardless of content.
 #   - smart: Apply dark mode filter to frames based on background color.
-c.colors.webpage.darkmode.policy.page = 'always'
+c.colors.webpage.darkmode.policy.page = 'smart'
+
+# Threshold for inverting text with dark mode. Text colors with
+# brightness below this threshold will be inverted, and above it will be
+# left as in the original, non-dark-mode page. Set to 256 to always
+# invert text color or to 0 to never invert text color.
+# Type: Int
+c.colors.webpage.darkmode.threshold.foreground = 128
+
+# Threshold for inverting background elements with dark mode. Background
+# elements with brightness above this threshold will be inverted, and
+# below it will be left as in the original, non-dark-mode page. Set to
+# 256 to never invert the color or to 0 to always invert it. Note: This
+# behavior is the opposite of
+# `colors.webpage.darkmode.threshold.foreground`!
+# Type: Int
+c.colors.webpage.darkmode.threshold.background = 128
 
 # Default font families to use. Whenever "default_family" is used in a
 # font setting, it's replaced with the fonts listed here. If set to an
