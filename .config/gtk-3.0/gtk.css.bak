@@ -16,7 +16,7 @@
 @define-color window_bg_color #17171C;
 @define-color window_fg_color #f2f2e9;
 @define-color view_bg_color #17171C;
-@define-color view_fg_color #f66151;
+@define-color view_fg_color #f2f2e9;
 @define-color headerbar_bg_color #17171C;
 @define-color headerbar_fg_color #ffffff;
 @define-color headerbar_border_color #17171C;
