@@ -14,6 +14,8 @@ if status is-interactive
     set -x XDG_SESSION_DESKTOP Hyprland
     set -x XDG_CURRENT_DESKTOP Hyprland
 
+    set -x ELECTRON_OZONE_PLATFORM_HINT "auto"
+
     set -x XCURSOR_SIZE 20
     set -x XCURSOR_THEME Bibata-Modern-Classic
 
