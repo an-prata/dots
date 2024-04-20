@@ -13,15 +13,15 @@ max-visible=-1
 font=JetBrainsMono 11
 
 [urgency=low]
-default-timeout=0
+default-timeout=10
 ignore-timeout=1
 
 [urgency=normal]
-default-timeout=0
+default-timeout=10
 ignore-timeout=1
 
 [urgency=high]
-default-timeout=0
+default-timeout=10
 ignore-timeout=1
 
 [mode=dnd]
