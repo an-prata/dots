@@ -6,5 +6,10 @@ PLAYER_SAVE="/tmp/waybar-media-player"
 player=$(cat $PLAYER_SAVE)
 
 playerctl $player $1
+
+# work around for weird issue where media stops on skip
+playerctl $player play-pause
+playerctl $player play-pause
+
 pkill -RTMIN+1 waybar
 
