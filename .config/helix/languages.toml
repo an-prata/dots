@@ -18,4 +18,5 @@ indent = { tab-width = 4, unit = "\t" }
 
 [[language]]
 name = "haskell"
-indent = { tab-width = 4, unit = "  " }
+file-types = ["hs"]
+indent = { tab-width = 4, unit = "    " }
