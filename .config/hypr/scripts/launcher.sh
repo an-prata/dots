@@ -6,7 +6,7 @@ if [[ $(pidof bemenu) != '' ]]; then
   exit
 fi
 
-normal_background='#17171C50'
+normal_background='#26262D' #'#17171C50'
 
 bemenu_colors="--nb '$normal_background' --ab '$normal_background' --hb '$normal_background' --fb '$normal_background' --tb '$normal_background' --nf '#f2f2e9' --af '#f2f2e9' --hf '#f2f2e9' --ff '#f2f2e9' --tf '#f2f2e9'"
 
