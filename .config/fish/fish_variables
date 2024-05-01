@@ -23,10 +23,11 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_greeting:hey\x2c\x20have\x20a\x20terminal\x20\x3aD
+SETUVAR fish_greeting:\x1b\x5b36m\x1e\x0a\x20\x20\uff0fl\u3001\x0a\x20\uff08\uff9f\uff64\x20\uff61\x20\uff17\x0a\x20\x20l\x20\x20\x7e\x20\u30fd\x0a\x20\x20\u3058\u3057f_\x2c\x29\u30ce\x0a\x20\x1e\x1b\x28B\x1b\x5bm
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/home/evan/\x2eghcup/bin\x1e/home/evan/\x2eghcup/bin/
