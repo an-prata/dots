@@ -28,28 +28,28 @@
         "interval": 5
     },
     "custom/media": {
-        "exec": "~/.config/hypr/scripts/media.sh",
-        "on-click": "~/.config/hypr/scripts/media-player-cmd.sh play-pause",
+        "exec": "~/.config/hypr/scripts/media.fish",
+        "on-click": "~/.config/hypr/scripts/media-player-cmd.fish play-pause",
         "on-click-right": "mpc toggle",
         "escape": true,
         "signal": 1
     },
     "custom/layout": {
-        "exec": "~/.config/hypr/scripts/layout-switch.sh get",
+        "exec": "~/.config/hypr/scripts/layout-switch.fish get",
         "exec-on-event": true,
-        "on-click": "~/.config/hypr/scripts/layout-switch.sh",
+        "on-click": "~/.config/hypr/scripts/layout-switch.fish",
         "signal": 2
     },
     "custom/window-start": {
-        "exec": "~/.config/hypr/scripts/window-start.sh get",
+        "exec": "~/.config/hypr/scripts/window-start.fish get",
         "exec-on-event": true,
-        "on-click": "~/.config/hypr/scripts/window-start.sh",
+        "on-click": "~/.config/hypr/scripts/window-start.fish",
         "signal": 3
     },
     "custom/dunst": {
-        "exec": "~/.config/hypr/scripts/mako.sh get",
+        "exec": "~/.config/hypr/scripts/mako.fish get",
         "exec-on-event": true,
-        "on-click": "~/.config/hypr/scripts/mako.sh toggle",
+        "on-click": "~/.config/hypr/scripts/mako.fish toggle",
         "signal": 4
     },
     "battery": {
