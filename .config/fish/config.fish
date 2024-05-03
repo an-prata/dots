@@ -8,7 +8,7 @@ if status is-interactive
     alias :q="exit"
 
     set fish_greeting (set_color cyan) "
-  ／l、
+   ／l、
  （ﾟ､ ｡ ７
   l  ~ ヽ
   じしf_,)ノ
