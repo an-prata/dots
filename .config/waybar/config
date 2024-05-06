@@ -43,7 +43,7 @@
     "custom/window-start": {
         "exec": "~/.config/hypr/scripts/window-start.fish get",
         "exec-on-event": true,
-        "on-click": "~/.config/hypr/scripts/window-start.fish",
+        "on-click": "~/.config/hypr/scripts/window-start.fish toggle",
         "signal": 3
     },
     "custom/dunst": {
