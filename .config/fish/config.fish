@@ -31,6 +31,7 @@ if status is-interactive
     set -x GTK_USE_PORTAL 1
     set -x QT_QPA_PLATFORM wayland
 
+    set -x MPD_HOST "$HOME/.config/mpd/socket"
     set -x VISUAL helix
     set -x EDITOR helix
     set -x GOPATH "$HOME/.go"

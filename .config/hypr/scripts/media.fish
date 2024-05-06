@@ -18,8 +18,6 @@ set tt $txt
 # cut off strings longer than 64 chars
 if test $(string length $txt) -gt 64
     set txt "$(echo $txt | cut -c -61)..."
-else if [ "$txt" = " 󰎉" ]
-    set txt "No Media Playing 󰎉 :("
 end
 
 # escape > and <
