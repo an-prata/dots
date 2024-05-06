@@ -2,15 +2,14 @@
 
 set artist $(playerctl metadata --format '{{artist}}')
 set title $(playerctl metadata --format '{{title}}')
+set player_status "$(playerctl status --no-messages)"
 
-if test "$artist" = "" -a "$title" != ""
-    set txt "$(playerctl status --no-messages) 󰎉 $title"
-else if test "$artist" != "" -a "$title" = ""
-    set txt "$(playerctl status --no-messages) 󰎉 $artist"
-else if test "$artist" != "" -a "$title" != ""
-    set txt "$(playerctl status --no-messages) 󰎉 $artist | $title"
-else
-    set txt "$(playerctl status --no-messages) 󰎉"
+if test -z "$artist" -o -z "$title"
+    set txt "$player_status 󰎉 $title$artist"
+else if test -n "$artist" -a -n "$title"
+    set txt "$player_status 󰎉 $artist | $title"
+else if test "$player_status" = Stopped
+    set txt ""
 end
 
 set tt $txt
