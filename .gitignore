@@ -3,3 +3,8 @@
 .config/mpd
 .config/qutebrowser/bookmarks/urls
 .config/bluetuith/bluetuith.conf
+.config/fish/fish_variables
+.config/btop/btop.conf
+.config/obs-studio
+.config/wpaperd
+.config/wpaperd/wallpaper.toml
