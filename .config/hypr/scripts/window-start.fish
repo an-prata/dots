@@ -20,7 +20,7 @@ switch $argv[1]
                 hyprctl keyword windowrule 'float,title:.*'
                 set -U WINDOW_START floating
                 echo set floating
-            case floating
+            case '*'
                 hyprctl keyword windowrule 'tile,title:.*'
                 set -U WINDOW_START tiling
                 echo set tiling
@@ -33,7 +33,7 @@ switch $argv[1]
                 hyprctl keyword windowrule 'tile,title:.*'
                 set -U WINDOW_START tiling
                 echo set tiling
-            case floating
+            case '*'
                 hyprctl keyword windowrule 'float,title:.*'
                 set -U WINDOW_START floating
                 echo set floating
