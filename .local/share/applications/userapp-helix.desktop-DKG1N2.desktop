@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Exec='/home/evan/.local/share/applications/helix.desktop' %f
+Name=helix.desktop
+Comment=Custom definition for helix.desktop
