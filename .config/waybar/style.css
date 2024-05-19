@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-    color: #f2f2e9;
-    background-color: rgba(23, 23, 28, 1.0);
+    color: rgba(23, 23, 28, 1.0);
+    background-color: #f2f2e9;
 }
 
 button {
