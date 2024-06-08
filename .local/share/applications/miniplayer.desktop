@@ -3,5 +3,5 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/usr/bin/kitty --class miniplayer -e /usr/bin/miniplayer
+Exec=/usr/bin/kitty --class miniplayer --override background_opacity=0.75 -e /usr/bin/miniplayer
 Name=miniplayer
