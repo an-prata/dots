@@ -233,7 +233,7 @@ c.editor.command = ['kitty', '-e', 'helix', '{file}']
 # Valid values:
 #   - default: Use the default file selector.
 #   - external: Use an external command.
-c.fileselect.handler = 'external'
+c.fileselect.handler = 'default'
 
 # Command (and arguments) to use for selecting a single file in forms.
 # The command should write the selected file path to the specified file
@@ -687,17 +687,19 @@ c.colors.webpage.bg = '#f2f2e9'
 #   - dark: Force a dark theme.
 c.colors.webpage.preferred_color_scheme = 'dark'
 
-# Render all web contents using a dark theme. Example configurations
-# from Chromium's `chrome://flags`: - "With simple HSL/CIELAB/RGB-based
-# inversion": Set   `colors.webpage.darkmode.algorithm` accordingly, and
-# set `colors.webpage.darkmode.policy.images` to `never`.  - "With
-# selective image inversion": qutebrowser default settings.
+# Render all web contents using a dark theme. On QtWebEngine < 6.7, this
+# setting requires a restart and does not support URL patterns, only the
+# global setting is applied. Example configurations from Chromium's
+# `chrome://flags`: - "With simple HSL/CIELAB/RGB-based inversion": Set
+# `colors.webpage.darkmode.algorithm` accordingly, and   set
+# `colors.webpage.darkmode.policy.images` to `never`.  - "With selective
+# image inversion": qutebrowser default settings.
 # Type: Bool
 c.colors.webpage.darkmode.enabled = False
 
-# Which algorithm to use for modifying how colors are rendered with
-# darkmode. The `lightness-cielab` value was added with QtWebEngine 5.14
-# and is treated like `lightness-hsl` with older QtWebEngine versions.
+# Which algorithm to use for modifying how colors are rendered with dark
+# mode. The `lightness-cielab` value was added with QtWebEngine 5.14 and
+# is treated like `lightness-hsl` with older QtWebEngine versions.
 # Type: String
 # Valid values:
 #   - lightness-cielab: Modify colors by converting them to CIELAB color space and inverting the L value. Not available with Qt < 5.14.

@@ -6,7 +6,5 @@
 
 config_version: 2
 settings:
-  scrolling.bar:
-    global: never
-  scrolling.smooth:
-    global: false
+  fileselect.handler:
+    global: default

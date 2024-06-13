@@ -79,8 +79,11 @@ x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
+application/xml=userapp-kitty-JRS9O2.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
 
 [Added Associations]
 image/jpeg=userapp-set-wallpaper-76BXV1.desktop;meh.desktop;feh.desktop;
 text/x-sh=nvim.desktop;
 application/vnd.comicbook+zip=org.pwmt.zathura.desktop;org.pwmt.zathura-cb.desktop;
+application/xml=userapp-kitty-JRS9O2.desktop;

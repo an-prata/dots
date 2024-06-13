@@ -5,7 +5,7 @@
     "spacing": 4, // Gaps between modules (4px)
     "modules-left": ["custom/layout", "custom/window-start", "custom/media"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/dunst", "pulseaudio", "battery", "custom/clock"],
+    "modules-right": ["custom/dunst", "wireplumber", "battery", "custom/clock"],
     "hyprland/workspaces": {
         "format": " {icon} ",
         "format-active": " {icon} ",
@@ -18,6 +18,8 @@
             "6": "六",
             "7": "七",
             "8": "八",
+            "9": "九",
+            "10": "十",
             "default": "-"
         },
         "sort-by-number": true,
@@ -59,7 +61,7 @@
         "format-alt": "{time}",
         "format-icons": [" ", " ", " ", " ", " "]
     },
-    "pulseaudio": {
+    "wireplumber": {
         "scroll-step": 0.1, // %, can be a float
         "format": "Volume {volume}",
         "format-bluetooth": "Volume {volume}",
@@ -68,7 +70,7 @@
         "format-icons": {
             "default": ["", "", " "]
         },
-        "on-click": "kitty -e ncpamixer"
+        "on-click": "pwvucontrol"
     },
 }
 
