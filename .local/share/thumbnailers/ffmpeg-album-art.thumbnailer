@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=ffmpeg
+Exec=ffmpeg -i %i -an -vcodec copy -f image2 -y %o -loglevel quiet
+MimeType=audio/mp4;audio/mpeg;audio/flac;audio/x-aiff
