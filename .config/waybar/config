@@ -70,7 +70,7 @@
         "format-icons": {
             "default": ["", "", " "]
         },
-        "on-click": "pwvucontrol"
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
 }
 
