@@ -233,7 +233,7 @@ c.editor.command = ['kitty', '-e', 'helix', '{file}']
 # Valid values:
 #   - default: Use the default file selector.
 #   - external: Use an external command.
-c.fileselect.handler = 'default'
+c.fileselect.handler = 'external'
 
 # Command (and arguments) to use for selecting a single file in forms.
 # The command should write the selected file path to the specified file
@@ -241,7 +241,7 @@ c.fileselect.handler = 'default'
 # the file to be written to. If not contained in any argument, the
 # standard output of the command is read instead.
 # Type: ShellCommand
-c.fileselect.single_file.command = ['kitty', '-e', 'ranger', '--choosefile={}']
+c.fileselect.single_file.command = ['kitty', '-e', 'joshuto', '--file-chooser', '--output-file', '{}']
 
 # Command (and arguments) to use for selecting multiple files in forms.
 # The command should write the selected file paths to the specified file
@@ -250,7 +250,7 @@ c.fileselect.single_file.command = ['kitty', '-e', 'ranger', '--choosefile={}']
 # contained in any argument, the   standard output of the command is
 # read instead.
 # Type: ShellCommand
-c.fileselect.multiple_files.command = ['kitty', '-e', 'ranger', '--choosefiles={}']
+c.fileselect.multiple_files.command = ['kitty', '-e', 'joshuto', '--file-chooser', '--output-file', '{}']
 
 # Command (and arguments) to use for selecting a single folder in forms.
 # The command should write the selected folder path to the specified
@@ -258,7 +258,7 @@ c.fileselect.multiple_files.command = ['kitty', '-e', 'ranger', '--choosefiles={
 # Filename of the file to be written to. If not contained in any
 # argument, the   standard output of the command is read instead.
 # Type: ShellCommand
-c.fileselect.folder.command = ['kitty', '-e', 'ranger', '--choosedir={}']
+c.fileselect.folder.command = ['kitty', '-e', 'joshuto', '--file-chooser', '--output-file', '{}']
 
 # Show a filebrowser in download prompts.
 # Type: Bool

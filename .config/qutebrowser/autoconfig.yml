@@ -6,5 +6,29 @@
 
 config_version: 2
 settings:
+  fileselect.folder.command:
+    global:
+    - kitty
+    - -e
+    - joshuto
+    - --file-chooser
+    - --output-file
+    - '{}'
   fileselect.handler:
-    global: default
+    global: external
+  fileselect.multiple_files.command:
+    global:
+    - kitty
+    - -e
+    - joshuto
+    - --file-chooser
+    - --output-file
+    - '{}'
+  fileselect.single_file.command:
+    global:
+    - kitty
+    - -e
+    - joshuto
+    - --file-chooser
+    - --output-file
+    - '{}'
