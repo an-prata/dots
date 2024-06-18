@@ -1,11 +1,11 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 40, // Waybar height (to be removed for auto height)
+    "height": 34, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
-    "modules-left": ["custom/layout", "custom/window-start", "custom/media"],
+    "modules-left": ["image#layout", "image#window-start", "custom/media"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/dunst", "wireplumber", "battery", "custom/clock"],
+    "modules-right": ["wireplumber", "image#mako", "image#volume", "image#battery", "custom/clock"],
     "hyprland/workspaces": {
         "format": " {icon} ",
         "format-active": " {icon} ",
@@ -26,7 +26,7 @@
         "on-click": "activate"
     },
     "custom/clock": {
-        "exec": "date +' %-l:%M %P '",
+        "exec": "date +'%A %B %e  %-l:%M %p '",
         "interval": 5
     },
     "custom/media": {
@@ -36,41 +36,60 @@
         "escape": true,
         "signal": 1
     },
-    "custom/layout": {
+    "image#layout": {
         "exec": "~/.config/hypr/scripts/layout-switch.fish get",
-        "exec-on-event": true,
         "on-click": "~/.config/hypr/scripts/layout-switch.fish",
-        "signal": 2
+        "signal": 2,
+        "size": 16,
     },
-    "custom/window-start": {
+    "image#window-start": {
         "exec": "~/.config/hypr/scripts/window-start.fish get",
-        "exec-on-event": true,
         "on-click": "~/.config/hypr/scripts/window-start.fish toggle",
-        "signal": 3
+        "signal": 3,
+        "size": 16,
     },
-    "custom/dunst": {
+    "image#mako": {
         "exec": "~/.config/hypr/scripts/mako.fish get",
-        "exec-on-event": true,
+        "size": 16,
+        "signal": 4,
         "on-click": "~/.config/hypr/scripts/mako.fish toggle",
-        "signal": 4
     },
     "battery": {
         "format": "Battery {capacity}",
         "format-charging": "Charging {capacity}",
         "format-plugged": "Battery {capacity}",
-        "format-alt": "{time}",
+        "format-alt": "Battery {capacity}",
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "wireplumber": {
-        "scroll-step": 0.1, // %, can be a float
-        "format": "Volume {volume}",
-        "format-bluetooth": "Volume {volume}",
-        "format-bluetooth-muted": "Muted",
-        "format-muted": "Muted",
+        "scroll-step": 1, // %, can be a float
+        // "format": "Volume {volume}",
+        // "format-bluetooth": "Volume {volume}",
+        // "format-bluetooth-muted": "Muted",
+        // "format-muted": "Muted",
+        "format": "",
+        "format-bluetooth": "",
+        "format-bluetooth-muted": "",
+        "format-muted": "",
         "format-icons": {
             "default": ["", "", " "]
         },
-        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-update": "~/.config/hypr/scripts/volume-icons.fish update"
     },
+    "image#battery": {
+        "path": "/tmp/waybar-battery-icon.svg",
+        "size": 20,
+        "signal": 5,
+    },
+    "image#volume": {
+        "exec": "~/.config/hypr/scripts/volume-icons.fish",
+        "size": 16,
+        "signal": 6,
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-",
+        "tooltop": true
+    }
 }
 
