@@ -1,17 +1,17 @@
 sort=-time
 anchor=top-right
 layer=overlay
-padding=12
+padding=10
 background-color=#26262da0
 text-color=#f2f2e9
-width=520
+width=440
 height=100
 border-size=1
 border-radius=6
 border-color=#323232
-max-icon-size=64
+max-icon-size=52
 max-visible=-1
-font=JetBrainsMono 11
+font=JetBrainsMono 9
 default-timeout=20000
 ignore-timeout=1
 
