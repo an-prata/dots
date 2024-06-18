@@ -1,10 +1,13 @@
 #!/usr/bin/env fish
 
 function toggle
-    if test "$(get)" = Silenced
-        makoctl mode -r dnd
-    else
-        makoctl mode -a dnd
+    set paused $(makoctl mode)
+
+    switch "$paused"
+        case "*dnd"
+            makoctl mode -r dnd
+        case '*'
+            makoctl mode -a dnd
     end
 
     pkill -RTMIN+4 waybar
@@ -15,8 +18,10 @@ function get
 
     switch "$paused"
         case "*dnd"
+            echo "/usr/share/icons/Colloid-dark/status/16/system-suspend.svg"
             echo Silenced
         case '*'
+            echo "/usr/share/icons/Colloid-dark/status/16/indicator-messages.svg"
             echo Notifying
     end
 end
@@ -26,4 +31,7 @@ switch $argv[1]
         toggle
     case get
         get
+    case start
+        toggle
+        toggle
 end

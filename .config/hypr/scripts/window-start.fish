@@ -4,12 +4,15 @@ switch $argv[1]
     case get
         switch $WINDOW_START
             case tiling
+                echo "/usr/share/icons/Colloid-dark/actions/16/window.svg"
                 echo Tiling
                 exit
             case floating
+                echo "/usr/share/icons/Colloid-dark/actions/16/window-duplicate.svg"
                 echo Floating
                 exit
             case '*'
+                echo ""
                 echo Unknown
                 exit
         end

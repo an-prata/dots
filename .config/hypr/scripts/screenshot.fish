@@ -13,6 +13,6 @@ if test "$status" = 0
     set open $(notify-send "Took a screenshot" "$save_dir/$file_name" --action 'default=default' -i "$save_dir/$file_name")
 
     if test "$open" = default
-        viewnior "$save_dir/$file_name"
+        swappy -f "$save_dir/$file_name"
     end
 end
