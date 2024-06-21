@@ -1,3 +1,11 @@
+/*
+Generated with Gradience
+
+Issues caused by theming should be reported to Gradience repository, and not to upstream
+
+https://github.com/GradienceTeam/Gradience
+*/
+
 @define-color accent_color #7a96cc;
 @define-color accent_bg_color #7a96cc;
 @define-color accent_fg_color #f2f2e9;
@@ -15,15 +23,15 @@
 @define-color error_fg_color #f2f2e9;
 @define-color window_bg_color #17171C;
 @define-color window_fg_color #f2f2e9;
-@define-color view_bg_color #17171C;
+@define-color view_bg_color #27272C;
 @define-color view_fg_color #f2f2e9;
 @define-color headerbar_bg_color #17171C;
 @define-color headerbar_fg_color #ffffff;
 @define-color headerbar_border_color #17171C;
 @define-color headerbar_backdrop_color #17171C;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
-@define-color card_bg_color #171717C;
-@define-color card_fg_color #ffffff;
+@define-color card_bg_color #27272C;
+@define-color card_fg_color #f2f2e9;
 @define-color card_shade_color rgba(0, 0, 0, 0.36);
 @define-color dialog_bg_color #27272C;
 @define-color dialog_fg_color #ffffff;
@@ -76,3 +84,7 @@
 @define-color dark_3 #3d3846;
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
+
+.navigation-sidebar {
+background-color: #17171C;
+}
