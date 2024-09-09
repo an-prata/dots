@@ -18,7 +18,7 @@ function get
 
     switch "$paused"
         case "*dnd"
-            echo "/usr/share/icons/Colloid-dark/status/16/system-suspend.svg"
+            echo "/usr/share/icons/Colloid-dark/status/16/weather-clear-night.svg"
             echo Silenced
         case '*'
             echo "/usr/share/icons/Colloid-dark/status/16/indicator-messages.svg"

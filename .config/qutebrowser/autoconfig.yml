@@ -6,29 +6,9 @@
 
 config_version: 2
 settings:
-  fileselect.folder.command:
-    global:
-    - kitty
-    - -e
-    - joshuto
-    - --file-chooser
-    - --output-file
-    - '{}'
-  fileselect.handler:
-    global: external
-  fileselect.multiple_files.command:
-    global:
-    - kitty
-    - -e
-    - joshuto
-    - --file-chooser
-    - --output-file
-    - '{}'
-  fileselect.single_file.command:
-    global:
-    - kitty
-    - -e
-    - joshuto
-    - --file-chooser
-    - --output-file
-    - '{}'
+  colors.downloads.error.bg:
+    global: '#cc7a7a'
+  colors.messages.error.bg:
+    global: '#cc7a7a'
+  colors.messages.error.fg:
+    global: '#f2f2e9'

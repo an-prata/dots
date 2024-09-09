@@ -5,6 +5,7 @@ if status is-interactive
     alias rm="rm -rfv"
     alias mkdir="mkdir -p"
     alias hx="helix"
+    alias shx="sudoedit"
     alias :q="exit"
 
     set fish_greeting (set_color cyan) "

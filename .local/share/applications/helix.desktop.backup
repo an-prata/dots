@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Version=1.0
 Type=Application
-NoDisplay=true
-Exec=helix  %f
+Terminal=false
+Exec=kitty --class helix -e /usr/bin/helix
 Name=helix
-Comment=Custom definition for helix

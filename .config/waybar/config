@@ -78,9 +78,10 @@
         "on-update": "~/.config/hypr/scripts/volume-icons.fish update"
     },
     "image#battery": {
-        "path": "/tmp/waybar-battery-icon.svg",
-        "size": 20,
-        "signal": 5,
+        "exec": "~/.config/hypr/scripts/battery-icon-module",
+        "size": 22,
+        "interval": 10,
+        "tooltop": true
     },
     "image#volume": {
         "exec": "~/.config/hypr/scripts/volume-icons.fish",

@@ -59,13 +59,13 @@ text/x-tcl=helix.desktop
 text/x-tex=helix.desktop
 text/x-c=helix.desktop
 text/x-c++=helix.desktop
-image/jpeg=viewnior.desktop
+image/jpeg=swayimg.desktop
 */plaintext=helix.desktop
 application/vnd.comicbook+zip=org.pwmt.zathura-cb.desktop
 application/vnd.comicbook=org.pwmt.zathura-cb.desktop
 image/*=viewnior.desktop
-image/png=viewnior.desktop
-image/jpg=viewnior.desktop
+image/png=swayimg.desktop
+image/jpg=swayimg.desktop
 text/csv=helix.desktop
 toolkit.legacyUserProfileCustomizations.stylesheets=helix.desktop
 application/x-wine-extension-ini=helix.desktop
@@ -81,6 +81,8 @@ x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
 application/xml=userapp-kitty-JRS9O2.desktop
 x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+image/bmp=swayimg.desktop
+image/tiff=swayimg.desktop
 
 [Added Associations]
 image/jpeg=userapp-set-wallpaper-76BXV1.desktop;meh.desktop;feh.desktop;

@@ -13,6 +13,25 @@
 # Change the argument to True to still load settings configured via autoconfig.yml
 config.load_autoconfig(False)
 
+# Aliases for commands. The keys of the given dictionary are the
+# aliases, while the values are the commands they map to.
+# Type: Dict
+c.aliases = {'q': 'close', 'qa': 'quit', 'w': 'session-save', 'wq': 'quit --save', 'wqa': 'quit --save'}
+
+# How to open links in an existing instance if a new one is launched.
+# This happens when e.g. opening a link from a terminal. See
+# `new_instance_open_target_window` to customize in which window the
+# link is opened in.
+# Type: String
+# Valid values:
+#   - tab: Open a new tab in the existing window and activate the window.
+#   - tab-bg: Open a new background tab in the existing window and activate the window.
+#   - tab-silent: Open a new tab in the existing window without activating the window.
+#   - tab-bg-silent: Open a new background tab in the existing window without activating the window.
+#   - window: Open in a new window.
+#   - private-window: Open in a new private window.
+c.new_instance_open_target = 'tab-bg'
+
 # Which Chromium process model to use. Alternative process models use
 # less resources, but decrease security and robustness. See the
 # following pages for more details:    -
@@ -260,9 +279,30 @@ c.fileselect.multiple_files.command = ['kitty', '-e', 'joshuto', '--file-chooser
 # Type: ShellCommand
 c.fileselect.folder.command = ['kitty', '-e', 'joshuto', '--file-chooser', '--output-file', '{}']
 
+# CSS border value for hints.
+# Type: String
+c.hints.border = '1px solid #17171C'
+
+# Rounding radius (in pixels) for the edges of hints.
+# Type: Int
+c.hints.radius = 5
+
+# Characters used for hint strings.
+# Type: UniqueCharString
+c.hints.chars = 'asdfghjkl'
+
+# Scatter hint key chains (like Vimium) or not (like dwb). Ignored for
+# number hints.
+# Type: Bool
+c.hints.scatter = False
+
+# Make characters in hint strings uppercase.
+# Type: Bool
+c.hints.uppercase = False
+
 # Show a filebrowser in download prompts.
 # Type: Bool
-c.prompt.filebrowser = True
+c.prompt.filebrowser = False
 
 # Rounding radius (in pixels) for the edges of prompts.
 # Type: Int
@@ -321,7 +361,7 @@ c.tabs.favicons.show = 'never'
 
 # Padding (in pixels) around text for tabs.
 # Type: Padding
-c.tabs.padding = {'bottom': 5, 'left': 12, 'right': 12, 'top': 5}
+c.tabs.padding = {'bottom': 8, 'left': 12, 'right': 12, 'top': 8}
 
 # When to show the tab bar.
 # Type: String
@@ -476,6 +516,15 @@ c.colors.downloads.stop.fg = '#f2f2e9'
 # Type: QtColor
 c.colors.downloads.stop.bg = '#b1cc7a'
 
+# Color gradient interpolation system for download text.
+# Type: ColorSystem
+# Valid values:
+#   - rgb: Interpolate in the RGB color system.
+#   - hsv: Interpolate in the HSV color system.
+#   - hsl: Interpolate in the HSL color system.
+#   - none: Don't show a gradient.
+c.colors.downloads.system.fg = 'none'
+
 # Foreground color for downloads with errors.
 # Type: QtColor
 c.colors.downloads.error.fg = '#f2f2e9'
@@ -488,13 +537,34 @@ c.colors.downloads.error.bg = '#cc7a7a'
 # Type: QssColor
 c.colors.hints.fg = '#17171C'
 
+# Background color for hints. Note that you can use a `rgba(...)` value
+# for transparency.
+# Type: QssColor
+c.colors.hints.bg = '#a0b886d1'
+
+# Font color for the matched part of hints.
+# Type: QtColor
+c.colors.hints.match.fg = '#f2f2e9'
+
+# Highlight color for keys to complete the current keychain.
+# Type: QssColor
+c.colors.keyhint.suffix.fg = '#FFFF00'
+
 # Foreground color of an error message.
 # Type: QssColor
 c.colors.messages.error.fg = '#f2f2e9'
 
+# Background color of an error message.
+# Type: QssColor
+c.colors.messages.error.bg = '#cc7a7a'
+
 # Foreground color of a warning message.
 # Type: QssColor
 c.colors.messages.warning.fg = '#17171C'
+
+# Border color of a warning message.
+# Type: QssColor
+c.colors.messages.warning.border = '#d47300'
 
 # Foreground color of an info message.
 # Type: QssColor
