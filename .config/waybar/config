@@ -54,13 +54,6 @@
         "signal": 4,
         "on-click": "~/.config/hypr/scripts/mako.fish toggle",
     },
-    "battery": {
-        "format": "Battery {capacity}",
-        "format-charging": "Charging {capacity}",
-        "format-plugged": "Battery {capacity}",
-        "format-alt": "Battery {capacity}",
-        "format-icons": [" ", " ", " ", " ", " "]
-    },
     "wireplumber": {
         "scroll-step": 1, // %, can be a float
         // "format": "Volume {volume}",

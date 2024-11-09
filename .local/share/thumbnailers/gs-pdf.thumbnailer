@@ -1,4 +1,4 @@
 [Thumbnailer Entry]
 TryExec=gs
-Exec=gs -o %o -sDEVICE=jpeg -dLastPage=1 %i
+Exec=gs -o '%o' -sDEVICE=jpeg -dLastPage=1 '%i'
 MimeType=application/pdf

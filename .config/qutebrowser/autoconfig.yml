@@ -6,9 +6,5 @@
 
 config_version: 2
 settings:
-  colors.downloads.error.bg:
-    global: '#cc7a7a'
-  colors.messages.error.bg:
-    global: '#cc7a7a'
-  colors.messages.error.fg:
-    global: '#f2f2e9'
+  colors.completion.scrollbar.bg:
+    global: '#17171C'

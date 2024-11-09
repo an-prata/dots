@@ -4,7 +4,11 @@ theme = "custom"
 line-number = "relative"
 idle-timeout = 100
 scroll-lines = 1
+completion-trigger-len = 1
 completion-timeout = 5
+# completion-replace = true
+shell = ["fish", "-c"]
+popup-border = "none"
 # mouse = false
 
 [editor.lsp]
@@ -18,14 +22,16 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
+[editor.gutters]
+layout = ["diagnostics", "line-numbers", "spacer", "spacer"]
+
 [editor.statusline]
-separator = "|"
-left = ["mode", "separator", "spacer", "version-control", "spacer", "diagnostics", "spinner"]
-center = ["file-modification-indicator", "file-base-name"]
-right = ["position", "separator", "spacer", "position-percentage", "spacer", "separator", "file-type", "separator", "file-line-ending"]
-mode.normal = "normal"
-mode.insert = "insert"
-mode.select = "select"
+left = ["mode", "spacer", "diagnostics", "file-base-name", "file-modification-indicator"]
+center = []
+right = ["file-type", "position"]
+mode.normal = "NOR"
+mode.insert = "INS"
+mode.select = "SEL"
 
 # [editor.lsp]
 # display-inlay-hints = true

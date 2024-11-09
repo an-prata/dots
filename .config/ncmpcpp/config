@@ -252,9 +252,11 @@ song_status_format = {{%a} - {%t}}
 #
 #current_item_inactive_column_suffix = $/r$(end)
 #
-#now_playing_prefix = $b
-#
-#now_playing_suffix = $/b
+
+now_playing_prefix = $b$i
+
+now_playing_suffix = $/b$/i
+
 #
 #browser_playlist_prefix = "$2playlist$9 "
 #

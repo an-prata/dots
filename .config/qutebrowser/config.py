@@ -777,6 +777,12 @@ c.colors.webpage.darkmode.enabled = False
 #   - brightness-rgb: Modify colors by subtracting each of r, g, and b from their maximum value.
 c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
 
+# Contrast for dark mode. This only has an effect when
+# `colors.webpage.darkmode.algorithm` is set to `lightness-hsl` or
+# `brightness-rgb`.
+# Type: Float
+c.colors.webpage.darkmode.contrast = 0.0
+
 # Which images to apply dark mode to.
 # Type: String
 # Valid values:
@@ -800,7 +806,7 @@ c.colors.webpage.darkmode.policy.page = 'smart'
 # left as in the original, non-dark-mode page. Set to 256 to always
 # invert text color or to 0 to never invert text color.
 # Type: Int
-c.colors.webpage.darkmode.threshold.foreground = 128
+c.colors.webpage.darkmode.threshold.foreground = 100
 
 # Threshold for inverting background elements with dark mode. Background
 # elements with brightness above this threshold will be inverted, and
@@ -809,7 +815,7 @@ c.colors.webpage.darkmode.threshold.foreground = 128
 # behavior is the opposite of
 # `colors.webpage.darkmode.threshold.foreground`!
 # Type: Int
-c.colors.webpage.darkmode.threshold.background = 128
+c.colors.webpage.darkmode.threshold.background = 200
 
 # Default font families to use. Whenever "default_family" is used in a
 # font setting, it's replaced with the fonts listed here. If set to an

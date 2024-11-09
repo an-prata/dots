@@ -5,7 +5,11 @@
 set save_dir "$HOME/Pictures/Temporary Screenshots"
 set file_name "Screenshot on $(date +"%A %B %d, %Y - %-I:%M:%S %p").png"
 
-grim -g "$(slurp)" "$save_dir/$file_name"
+set region $(slurp -d -w 1 -b '#00000000' -c '#17171Cff' -s '#ffffff00' -F 'JetBrainsMono')
+
+# sleep so slurp's selection visuals dont appear in the screenshot
+sleep 0.25
+grim -g "$region" "$save_dir/$file_name"
 
 if test "$status" = 0
     wl-copy <"$save_dir/$file_name"

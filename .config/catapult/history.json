@@ -1,0 +1,1285 @@
+{
+  "2": {
+    "apps": {
+      "wpilib-vscode-2024.desktop": [
+        1730438258
+      ]
+    }
+  },
+  ":": {
+    "builtins": {
+      ":about": [
+        1730443199
+      ],
+      ":update": [
+        1730443209
+      ]
+    }
+  },
+  ":p": {
+    "builtins": {
+      ":preferences": [
+        1730439634,
+        1730442977,
+        1730526263,
+        1730575444,
+        1730761280
+      ]
+    }
+  },
+  ":pr": {
+    "builtins": {
+      ":preferences": [
+        1730439634,
+        1730442977,
+        1730526263,
+        1730575444,
+        1730761280
+      ]
+    }
+  },
+  ":pre": {
+    "builtins": {
+      ":preferences": [
+        1730439634,
+        1730442977,
+        1730526263,
+        1730575444,
+        1730761280
+      ]
+    }
+  },
+  ":pref": {
+    "builtins": {
+      ":preferences": [
+        1730439051,
+        1730526263,
+        1730761280
+      ]
+    }
+  },
+  ":r": {
+    "builtins": {
+      ":reload-plugins": [
+        1730439647,
+        1730439657,
+        1730439670,
+        1730442999,
+        1730575080
+      ],
+      ":reload-theme": [
+        1730575232,
+        1730575258,
+        1730575389,
+        1730761331,
+        1730761359
+      ]
+    }
+  },
+  ":re": {
+    "builtins": {
+      ":reload-plugins": [
+        1730439647,
+        1730439657,
+        1730439670,
+        1730442999,
+        1730575080
+      ],
+      ":reload-theme": [
+        1730575232,
+        1730575258,
+        1730575389,
+        1730761331,
+        1730761359
+      ]
+    }
+  },
+  ":rel": {
+    "builtins": {
+      ":reload-plugins": [
+        1730439647,
+        1730439657,
+        1730439670,
+        1730442999,
+        1730575080
+      ],
+      ":reload-theme": [
+        1730575232,
+        1730575258,
+        1730575389,
+        1730761331,
+        1730761359
+      ]
+    }
+  },
+  ":relo": {
+    "builtins": {
+      ":reload-theme": [
+        1730574884
+      ]
+    }
+  },
+  "D": {
+    "files": {
+      "file:///home/evan/Documents": [
+        1730575731
+      ]
+    }
+  },
+  "Do": {
+    "files": {
+      "file:///home/evan/Documents": [
+        1730575731
+      ]
+    }
+  },
+  "Doc": {
+    "files": {
+      "file:///home/evan/Documents": [
+        1730575731
+      ]
+    }
+  },
+  "Docu": {
+    "files": {
+      "file:///home/evan/Documents": [
+        1730575731
+      ]
+    }
+  },
+  "X": {
+    "apps": {
+      "xdvi.desktop": [
+        1730849927
+      ]
+    }
+  },
+  "Xd": {
+    "apps": {
+      "xdvi.desktop": [
+        1730849927
+      ]
+    }
+  },
+  "a": {
+    "apps": {
+      "nm-connection-editor.desktop": [
+        1730924159,
+        1730924181,
+        1730924188,
+        1730924196,
+        1730924283
+      ],
+      "org.gnome.Calculator.desktop": [
+        1730438903
+      ]
+    }
+  },
+  "ad": {
+    "apps": {
+      "nm-connection-editor.desktop": [
+        1730924159,
+        1730924181,
+        1730924188,
+        1730924196,
+        1730924283
+      ]
+    }
+  },
+  "adv": {
+    "apps": {
+      "nm-connection-editor.desktop": [
+        1730924144,
+        1730924181,
+        1730924188,
+        1730924196,
+        1730924283
+      ]
+    }
+  },
+  "adva": {
+    "apps": {
+      "nm-connection-editor.desktop": [
+        1730924144,
+        1730924181,
+        1730924188,
+        1730924196,
+        1730924283
+      ]
+    }
+  },
+  "b": {
+    "apps": {
+      "bluetuith.desktop": [
+        1730439362
+      ],
+      "btop.desktop": [
+        1730437682,
+        1730437853,
+        1730439683
+      ]
+    }
+  },
+  "bt": {
+    "apps": {
+      "btop.desktop": [
+        1730437682,
+        1730439683
+      ]
+    }
+  },
+  "c": {
+    "apps": {
+      "gscriptor.desktop": [
+        1730438908
+      ],
+      "openscad.desktop": [
+        1730944023
+      ]
+    }
+  },
+  "ca": {
+    "apps": {
+      "gscriptor.desktop": [
+        1730438908
+      ],
+      "openscad.desktop": [
+        1730944023
+      ]
+    }
+  },
+  "cad": {
+    "apps": {
+      "openscad.desktop": [
+        1730944023
+      ]
+    }
+  },
+  "d": {
+    "apps": {
+      "discord.desktop": [
+        1731042094,
+        1731108049,
+        1731109593,
+        1731123073,
+        1731123789
+      ],
+      "nwg-displays.desktop": [
+        1730439886
+      ],
+      "org.gnome.DiskUtility.desktop": [
+        1730443225,
+        1730575466,
+        1730610934,
+        1730703897,
+        1730704167
+      ]
+    },
+    "files": {
+      "file:///home/evan/Documents": [
+        1730443150
+      ]
+    }
+  },
+  "di": {
+    "apps": {
+      "discord.desktop": [
+        1730944746,
+        1731042094,
+        1731108049,
+        1731109593,
+        1731123073
+      ],
+      "nwg-displays.desktop": [
+        1730439886
+      ],
+      "org.gnome.DiskUtility.desktop": [
+        1730443225,
+        1730575466,
+        1730610934,
+        1730703897,
+        1730704167
+      ]
+    }
+  },
+  "dis": {
+    "apps": {
+      "discord.desktop": [
+        1730944746,
+        1731042094,
+        1731108049,
+        1731109593,
+        1731123073
+      ],
+      "nwg-displays.desktop": [
+        1730439886
+      ],
+      "org.gnome.DiskUtility.desktop": [
+        1730443225,
+        1730575466,
+        1730610934,
+        1730703897,
+        1730704167
+      ]
+    }
+  },
+  "disc": {
+    "apps": {
+      "discord.desktop": [
+        1730610939,
+        1730703901,
+        1730706035
+      ]
+    }
+  },
+  "disco": {
+    "apps": {
+      "discord.desktop": [
+        1730610939
+      ]
+    }
+  },
+  "disk": {
+    "apps": {
+      "org.gnome.DiskUtility.desktop": [
+        1730575466
+      ]
+    }
+  },
+  "disp": {
+    "apps": {
+      "nwg-displays.desktop": [
+        1730439886
+      ]
+    }
+  },
+  "displ": {
+    "apps": {
+      "nwg-displays.desktop": [
+        1730439886
+      ]
+    }
+  },
+  "do": {
+    "files": {
+      "file:///home/evan/Documents": [
+        1730443150
+      ]
+    }
+  },
+  "doc": {
+    "files": {
+      "file:///home/evan/Documents": [
+        1730443150
+      ]
+    }
+  },
+  "e": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730924830
+      ]
+    }
+  },
+  "el": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730924830
+      ]
+    }
+  },
+  "ele": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730924830
+      ]
+    }
+  },
+  "elem": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730924830
+      ]
+    }
+  },
+  "f": {
+    "apps": {
+      "firefox.desktop": [
+        1731007106,
+        1731026642,
+        1731087137,
+        1731090861,
+        1731094480
+      ],
+      "fish.desktop": [
+        1730959195
+      ],
+      "org.freecad.FreeCAD.desktop": [
+        1730943971,
+        1730944579
+      ],
+      "org.gnome.Nautilus.desktop": [
+        1731022842,
+        1731022849,
+        1731022939,
+        1731094722,
+        1731094876
+      ]
+    }
+  },
+  "fi": {
+    "apps": {
+      "firefox.desktop": [
+        1731007106,
+        1731026642,
+        1731087137,
+        1731090861,
+        1731094480
+      ],
+      "fish.desktop": [
+        1730959195
+      ],
+      "org.gnome.Nautilus.desktop": [
+        1731022842,
+        1731022849,
+        1731022939,
+        1731094722,
+        1731094876
+      ]
+    }
+  },
+  "fil": {
+    "apps": {
+      "org.gnome.Nautilus.desktop": [
+        1731022842,
+        1731022849,
+        1731022939,
+        1731094722,
+        1731094876
+      ]
+    }
+  },
+  "file": {
+    "apps": {
+      "org.gnome.Nautilus.desktop": [
+        1731022546,
+        1731022842,
+        1731022939,
+        1731094722,
+        1731094876
+      ]
+    }
+  },
+  "fir": {
+    "apps": {
+      "firefox.desktop": [
+        1731007106,
+        1731026642,
+        1731087137,
+        1731090861,
+        1731094480
+      ]
+    }
+  },
+  "fire": {
+    "apps": {
+      "firefox.desktop": [
+        1731007106,
+        1731026642,
+        1731087137,
+        1731090861,
+        1731094480
+      ]
+    }
+  },
+  "fr": {
+    "apps": {
+      "org.freecad.FreeCAD.desktop": [
+        1730943971,
+        1730944579
+      ]
+    }
+  },
+  "fre": {
+    "apps": {
+      "org.freecad.FreeCAD.desktop": [
+        1730943971,
+        1730944579
+      ]
+    }
+  },
+  "free": {
+    "apps": {
+      "org.freecad.FreeCAD.desktop": [
+        1730944579
+      ]
+    }
+  },
+  "g": {
+    "apps": {
+      "com.github.GradienceTeam.Gradience.desktop": [
+        1731019738,
+        1731020202,
+        1731021633,
+        1731107147,
+        1731107169
+      ],
+      "org.rncbc.qpwgraph.desktop": [
+        1731019691
+      ]
+    }
+  },
+  "gr": {
+    "apps": {
+      "com.github.GradienceTeam.Gradience.desktop": [
+        1731019738,
+        1731020202,
+        1731021633,
+        1731107147,
+        1731107169
+      ],
+      "org.rncbc.qpwgraph.desktop": [
+        1731019691
+      ]
+    }
+  },
+  "gra": {
+    "apps": {
+      "com.github.GradienceTeam.Gradience.desktop": [
+        1731019738,
+        1731020202,
+        1731021633,
+        1731107147,
+        1731107169
+      ],
+      "org.rncbc.qpwgraph.desktop": [
+        1731019691
+      ]
+    }
+  },
+  "grad": {
+    "apps": {
+      "com.github.GradienceTeam.Gradience.desktop": [
+        1731019738,
+        1731020202,
+        1731021633,
+        1731107147,
+        1731107169
+      ]
+    }
+  },
+  "h": {
+    "apps": {
+      "helix.desktop": [
+        1731093214,
+        1731093446,
+        1731093607,
+        1731095089,
+        1731123619
+      ]
+    }
+  },
+  "he": {
+    "apps": {
+      "helix.desktop": [
+        1731093214,
+        1731093446,
+        1731093607,
+        1731095089,
+        1731123619
+      ]
+    }
+  },
+  "hel": {
+    "apps": {
+      "helix.desktop": [
+        1731093214,
+        1731093446,
+        1731093607,
+        1731095089,
+        1731123619
+      ]
+    }
+  },
+  "heli": {
+    "apps": {
+      "helix.desktop": [
+        1731093214,
+        1731093446,
+        1731093607,
+        1731095089,
+        1731123619
+      ]
+    }
+  },
+  "i": {
+    "apps": {
+      "idea.desktop": [
+        1730780089,
+        1731030133,
+        1731093222
+      ],
+      "iwgtk.desktop": [
+        1730934623
+      ]
+    }
+  },
+  "id": {
+    "apps": {
+      "idea.desktop": [
+        1730780089
+      ]
+    }
+  },
+  "ide": {
+    "apps": {
+      "idea.desktop": [
+        1730780089
+      ]
+    }
+  },
+  "idea": {
+    "apps": {
+      "idea.desktop": [
+        1730780089
+      ]
+    }
+  },
+  "in": {
+    "apps": {
+      "idea.desktop": [
+        1731030133,
+        1731093222
+      ]
+    }
+  },
+  "int": {
+    "apps": {
+      "idea.desktop": [
+        1731030133,
+        1731093222
+      ]
+    }
+  },
+  "inte": {
+    "apps": {
+      "idea.desktop": [
+        1731030133,
+        1731093222
+      ]
+    }
+  },
+  "intel": {
+    "apps": {
+      "idea.desktop": [
+        1731030133
+      ]
+    }
+  },
+  "iw": {
+    "apps": {
+      "iwgtk.desktop": [
+        1730934623
+      ]
+    }
+  },
+  "j": {
+    "apps": {
+      "joshuto.desktop": [
+        1730694006,
+        1731090841,
+        1731092124,
+        1731095197,
+        1731095666
+      ],
+      "jshell-java-openjdk.desktop": [
+        1730443401
+      ],
+      "jshell-java17-openjdk.desktop": [
+        1730443405
+      ]
+    }
+  },
+  "jd": {
+    "apps": {
+      "jshell-java-openjdk.desktop": [
+        1730443401
+      ]
+    }
+  },
+  "jdk": {
+    "apps": {
+      "jshell-java-openjdk.desktop": [
+        1730443401
+      ]
+    }
+  },
+  "jo": {
+    "apps": {
+      "joshuto.desktop": [
+        1730694006,
+        1731090841,
+        1731092124,
+        1731095197,
+        1731095666
+      ]
+    }
+  },
+  "jos": {
+    "apps": {
+      "joshuto.desktop": [
+        1730694006,
+        1731090841,
+        1731092124,
+        1731095197,
+        1731095666
+      ]
+    }
+  },
+  "josh": {
+    "apps": {
+      "joshuto.desktop": [
+        1730694006,
+        1731090841,
+        1731095197,
+        1731095666
+      ]
+    }
+  },
+  "m": {
+    "apps": {
+      "mangal.desktop": [
+        1730761160,
+        1730761230,
+        1730761250
+      ],
+      "miniplayer.desktop": [
+        1730768873,
+        1730768908,
+        1730768915,
+        1730853405,
+        1731039289
+      ]
+    },
+    "files": {
+      "file:///home/evan/Music": [
+        1730443174
+      ]
+    }
+  },
+  "ma": {
+    "apps": {
+      "mangal.desktop": [
+        1730761160,
+        1730761230,
+        1730761250
+      ]
+    }
+  },
+  "man": {
+    "apps": {
+      "mangal.desktop": [
+        1730761160,
+        1730761230,
+        1730761250
+      ]
+    }
+  },
+  "mi": {
+    "apps": {
+      "miniplayer.desktop": [
+        1730768873,
+        1730768908,
+        1730768915,
+        1730853405,
+        1731039289
+      ]
+    }
+  },
+  "min": {
+    "apps": {
+      "miniplayer.desktop": [
+        1730768873,
+        1730768908,
+        1730768915,
+        1730853405,
+        1731039289
+      ]
+    }
+  },
+  "mini": {
+    "apps": {
+      "miniplayer.desktop": [
+        1730768873,
+        1730768908,
+        1730768915,
+        1730853405,
+        1731039289
+      ]
+    }
+  },
+  "mu": {
+    "files": {
+      "file:///home/evan/Music": [
+        1730443174
+      ]
+    }
+  },
+  "mus": {
+    "files": {
+      "file:///home/evan/Music": [
+        1730443174
+      ]
+    }
+  },
+  "n": {
+    "apps": {
+      "ncmpcpp.desktop": [
+        1730683936,
+        1730745783,
+        1730963880,
+        1731019984,
+        1731039278
+      ],
+      "nemo.desktop": [
+        1731021487,
+        1731021669,
+        1731021675,
+        1731021857,
+        1731094768
+      ],
+      "nm-connection-editor.desktop": [
+        1730439880
+      ],
+      "nwg-displays.desktop": [
+        1730768332,
+        1730768335
+      ],
+      "org.gnome.Nautilus.desktop": [
+        1731020357,
+        1731020421,
+        1731020808,
+        1731020886,
+        1731020890
+      ]
+    }
+  },
+  "na": {
+    "apps": {
+      "org.gnome.Nautilus.desktop": [
+        1731020357,
+        1731020421,
+        1731020808,
+        1731020886,
+        1731020890
+      ]
+    }
+  },
+  "nau": {
+    "apps": {
+      "org.gnome.Nautilus.desktop": [
+        1731020093,
+        1731020353,
+        1731020886
+      ]
+    }
+  },
+  "nc": {
+    "apps": {
+      "ncmpcpp.desktop": [
+        1730683936,
+        1730745783,
+        1730963880,
+        1731019984,
+        1731039278
+      ]
+    }
+  },
+  "ncm": {
+    "apps": {
+      "ncmpcpp.desktop": [
+        1730683936,
+        1730745783,
+        1730963880,
+        1731039278
+      ]
+    }
+  },
+  "ne": {
+    "apps": {
+      "nemo.desktop": [
+        1731021487,
+        1731021669,
+        1731021675,
+        1731021857,
+        1731094768
+      ],
+      "nm-connection-editor.desktop": [
+        1730439880
+      ]
+    }
+  },
+  "nem": {
+    "apps": {
+      "nemo.desktop": [
+        1731021487,
+        1731021669,
+        1731021675,
+        1731021857,
+        1731094768
+      ]
+    }
+  },
+  "net": {
+    "apps": {
+      "nm-connection-editor.desktop": [
+        1730439880
+      ]
+    }
+  },
+  "nw": {
+    "apps": {
+      "nwg-displays.desktop": [
+        1730768332,
+        1730768335
+      ]
+    }
+  },
+  "nwg": {
+    "apps": {
+      "nwg-displays.desktop": [
+        1730768332
+      ]
+    }
+  },
+  "o": {
+    "apps": {
+      "com.obsproject.Studio.desktop": [
+        1730492038
+      ]
+    }
+  },
+  "ob": {
+    "apps": {
+      "com.obsproject.Studio.desktop": [
+        1730492038
+      ]
+    }
+  },
+  "obs": {
+    "apps": {
+      "com.obsproject.Studio.desktop": [
+        1730492038
+      ]
+    }
+  },
+  "p": {
+    "apps": {
+      "PrusaSlicer.desktop": [
+        1730854385
+      ],
+      "gparted.desktop": [
+        1730575462
+      ],
+      "org.pulseaudio.pavucontrol.desktop": [
+        1731123529
+      ]
+    },
+    "files": {
+      "computer:///": [
+        1730439197
+      ],
+      "file:///home/evan/Pictures": [
+        1730439478,
+        1730443097,
+        1730443147
+      ]
+    }
+  },
+  "pa": {
+    "apps": {
+      "gparted.desktop": [
+        1730575462
+      ],
+      "org.pulseaudio.pavucontrol.desktop": [
+        1731123529
+      ]
+    }
+  },
+  "pi": {
+    "files": {
+      "file:///home/evan/Pictures": [
+        1730439478,
+        1730443097,
+        1730443147
+      ]
+    }
+  },
+  "pic": {
+    "files": {
+      "file:///home/evan/Pictures": [
+        1730439478,
+        1730443097,
+        1730443147
+      ]
+    }
+  },
+  "pict": {
+    "files": {
+      "file:///home/evan/Pictures": [
+        1730439478
+      ]
+    }
+  },
+  "pr": {
+    "apps": {
+      "PrusaSlicer.desktop": [
+        1730854385
+      ]
+    }
+  },
+  "q": {
+    "apps": {
+      "org.qutebrowser.qutebrowser.desktop": [
+        1731087035,
+        1731090831,
+        1731090854,
+        1731106998,
+        1731110340
+      ],
+      "org.rncbc.qpwgraph.desktop": [
+        1730438884,
+        1731123524
+      ]
+    }
+  },
+  "qp": {
+    "apps": {
+      "org.rncbc.qpwgraph.desktop": [
+        1730438884,
+        1731123524
+      ]
+    }
+  },
+  "qu": {
+    "apps": {
+      "org.qutebrowser.qutebrowser.desktop": [
+        1731087035,
+        1731090831,
+        1731090854,
+        1731106998,
+        1731110340
+      ]
+    }
+  },
+  "qut": {
+    "apps": {
+      "org.qutebrowser.qutebrowser.desktop": [
+        1731087035,
+        1731090831,
+        1731090854,
+        1731106998,
+        1731110340
+      ]
+    }
+  },
+  "qute": {
+    "apps": {
+      "org.qutebrowser.qutebrowser.desktop": [
+        1731087035,
+        1731090831,
+        1731090854,
+        1731106998,
+        1731110340
+      ]
+    }
+  },
+  "r": {
+    "files": {
+      "file:///home/evan/Repos": [
+        1730443166
+      ]
+    }
+  },
+  "re": {
+    "files": {
+      "file:///home/evan/Repos": [
+        1730443166
+      ]
+    }
+  },
+  "rep": {
+    "files": {
+      "file:///home/evan/Repos": [
+        1730443166
+      ]
+    }
+  },
+  "repo": {
+    "files": {
+      "file:///home/evan/Repos": [
+        1730443166
+      ]
+    }
+  },
+  "s": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730924796,
+        1730934185,
+        1730935535,
+        1731126956
+      ],
+      "nwg-look.desktop": [
+        1730934182
+      ],
+      "simplest-fetch.desktop": [
+        1730576344
+      ],
+      "slack.desktop": [
+        1730774367,
+        1730777111,
+        1730782076,
+        1731051597,
+        1731090983
+      ]
+    }
+  },
+  "se": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730934185,
+        1730935535,
+        1731126956
+      ],
+      "nwg-look.desktop": [
+        1730934182
+      ]
+    }
+  },
+  "set": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730934185,
+        1730935535,
+        1731126956
+      ],
+      "nwg-look.desktop": [
+        1730934182
+      ]
+    }
+  },
+  "sett": {
+    "apps": {
+      "io.elementary.settings.desktop": [
+        1730934185,
+        1730935535,
+        1731126956
+      ]
+    }
+  },
+  "si": {
+    "apps": {
+      "simplest-fetch.desktop": [
+        1730576344
+      ]
+    }
+  },
+  "sim": {
+    "apps": {
+      "simplest-fetch.desktop": [
+        1730576344
+      ]
+    }
+  },
+  "sl": {
+    "apps": {
+      "slack.desktop": [
+        1730774367,
+        1730777111,
+        1730782076,
+        1731051597,
+        1731090983
+      ]
+    }
+  },
+  "sla": {
+    "apps": {
+      "slack.desktop": [
+        1730774367,
+        1730777111,
+        1730782076,
+        1731051597,
+        1731090983
+      ]
+    }
+  },
+  "t": {
+    "files": {
+      "file:///home/evan/Pictures": [
+        1730443075
+      ],
+      "trash:///": [
+        1730439204
+      ]
+    }
+  },
+  "tr": {
+    "files": {
+      "trash:///": [
+        1730439204
+      ]
+    }
+  },
+  "tra": {
+    "files": {
+      "trash:///": [
+        1730439204
+      ]
+    }
+  },
+  "v": {
+    "apps": {
+      "org.pulseaudio.pavucontrol.desktop": [
+        1730443217,
+        1731019704,
+        1731019859
+      ],
+      "viewnior.desktop": [
+        1731021433
+      ]
+    }
+  },
+  "vi": {
+    "apps": {
+      "viewnior.desktop": [
+        1731021433
+      ]
+    }
+  },
+  "vie": {
+    "apps": {
+      "viewnior.desktop": [
+        1731021433
+      ]
+    }
+  },
+  "vo": {
+    "apps": {
+      "org.pulseaudio.pavucontrol.desktop": [
+        1730443217,
+        1731019704,
+        1731019859
+      ]
+    }
+  },
+  "vol": {
+    "apps": {
+      "org.pulseaudio.pavucontrol.desktop": [
+        1730443217,
+        1731019704,
+        1731019859
+      ]
+    }
+  }
+}

@@ -1,23 +1,33 @@
 # My custom little helix theme, mostly based off base16_terminal
 
 # The ui elements are in the order they appear in documentation
-"ui.background" = "comment"
+"ui.background" = { fg = "faded", bg = "#17171C" }
+
 "ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursor.match" = { bg = "faded" }
+
 "ui.linenr" = "faded"
-"ui.linenr.selected" = { fg = "comment", modifiers = ["bold"] }
-"ui.statusline" = { fg = "comment", bg = "subtle-back", modifiers = ["bold"] }
+"ui.linenr.selected" = { fg = "comment", modifiers = [] }
+
+"ui.statusline" = { fg = "default", bg = "default", modifiers = [] }
 "ui.statusline.inactive" = { fg = "gray", bg = "subtle-back" }
-"ui.popup" = { fg = "comment", bg = "subtle-back" }
-"ui.popup.info" = { fg = "comment", bg = "subtle-back" }
+
+"ui.popup" = { fg = "subtle-back", bg = "subtle-back" }
+"ui.popup.info" = { fg = "subtle-back", bg = "subtle-back" }
+
 "ui.window" = { bg = "black" }
+
 "ui.help" = { fg = "comment", bg = "subtle-back" }
+
 "ui.text" = "text-default"
+
 "ui.virtual.whitespace" = "faded"
 "ui.virtual.indent-guide" = "black"
 "ui.virtual.inlay-hint" = { fg = "faded", modifiers = ["italic"] }
+
 "ui.menu" = { fg = "comment", bg = "subtle-back" }
 "ui.menu.selected" = { modifiers = ["reversed"] }
+
 "ui.selection" = { bg = "faded" }
 
 # code bits
@@ -67,7 +77,7 @@
 # and the few colors that arent base 16
 [palette]
 text-default = "#c9c9c9"
-faded = "#3d3d4a"
+faded = "#2d2d3a"
 comment = "#616175" #"#68688c"
 subtle-back = "#1e1e24"
 

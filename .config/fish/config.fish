@@ -23,7 +23,7 @@ if status is-interactive
     set -x XDG_SESSION_DESKTOP Hyprland
     set -x XDG_CURRENT_DESKTOP Hyprland
 
-    set -x ELECTRON_OZONE_PLATFORM_HINT auto
+    set -x ELECTRON_OZONE_PLATFORM_HINT wayland
 
     set -x XCURSOR_SIZE 20
     set -x XCURSOR_THEME Bibata-Modern-Classic
@@ -42,6 +42,7 @@ if status is-interactive
     set -x GPG_TTY $(tty)
 
     fish_add_path "$HOME/.ghcup/bin/"
+    fish_add_path "$HOME/.local/bin/"
 
     source ~/.config/fish/secrets.fish
 end

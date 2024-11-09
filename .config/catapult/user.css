@@ -1,0 +1,96 @@
+/* Any CSS added here can be used to override theme CSS. */
+/* Use ":reload-theme" in Catapult to see changes. */
+/* For available classes, see the Catapult default "dark" theme: */
+/* https://github.com/otsaloma/catapult/blob/master/data/themes/dark.css */
+
+@define-color bg-color #1e1e24A8;
+@define-color fg-color #f2f2e9;
+@define-color selected-bg-color #2d2d3a;
+@define-color selected-fg-color #f2f2e9;
+
+.catapult-window {
+  background-color: @bg-color;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0px;
+}
+
+.catapult-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0px;
+}
+
+.catapult-input-box {
+  background-color: transparent;
+  margin: 0;
+  padding: 0 12px;
+}
+
+.catapult-input-icon {
+  background-color: transparent;
+  color: @fg-color;
+  padding: 15px 24px 15px 12px;
+}
+
+.catapult-input-entry {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  caret-color: alpha(@fg-color, 0.2);
+  color: @fg-color;
+  font-family: "JetBrainsMono NF", monospace;
+  font-size: 200%;
+  outline: none;
+  border-radius: 7;
+  padding: 12px 24px 9px 0;
+}
+
+.catapult-input-entry:selected {
+  background-color: alpha(@selected-bg-color, 0.6);
+  border-radius: 7;
+  color: @selected-fg-color;
+}
+
+.catapult-search-result-list {
+  background-color: transparent;
+}
+
+.catapult-search-result {
+  background-color: transparent;
+  margin: 0;
+  border-radius: 7;
+  padding: 0 12px;
+}
+
+.catapult-search-result:selected {
+  background-color: alpha(@selected-bg-color, 0.6);
+  border-radius: 7;
+  outline: none;
+}
+
+.catapult-search-result:selected * {
+  border-radius: 7;
+  color: @selected-fg-color;
+}
+
+.catapult-search-result-icon {
+  background-color: transparent;
+  padding: 3px 12px 3px 0;
+}
+
+.catapult-search-result-title {
+  background-color: transparent;
+  color: @fg-color;
+  font-family: "JetBrainsMono NF", monospace;
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.catapult-search-result-description {
+  background-color: transparent;
+  color: alpha(@fg-color, 0.5);
+  font-family: "JetBrainsMono NF", monospace;
+}

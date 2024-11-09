@@ -1,0 +1,10 @@
+{
+  "# exclude": [
+    "lost+found"
+  ],
+  "# include": [
+    "/home/evan/*"
+  ],
+  "# scan_interval": 900,
+  "version": "1.1"
+}
