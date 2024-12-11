@@ -3,7 +3,6 @@ set recolor-keephue
 set font "JetBrainsMono 10"
 
 set statusbar-basename
-set statusbar-page-percent
 set statusbar-home-tilde
 set statusbar-h-padding 16
 set statusbar-v-padding 6

@@ -80,11 +80,7 @@
 	background: rgba(38, 38, 45, 0.68);
 }
 
-.places_sidebar, .sidebar-pane, .navigation-sidebar {
+.places_sidebar, .sidebar-pane, .navigation-sidebar, .sidebar {
 	background-color: transparent;
 	color: #f2f2e9;
-}
-
-.content-pane {
-	background: #17171C;
 }

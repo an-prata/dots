@@ -12,7 +12,8 @@ popup-border = "none"
 # mouse = false
 
 [editor.lsp]
-display-messages = true
+display-messages = false
+auto-signature-help = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -23,12 +24,12 @@ select = "underline"
 hidden = false
 
 [editor.gutters]
-layout = ["diagnostics", "line-numbers", "spacer", "spacer"]
+layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
 
 [editor.statusline]
 left = ["mode", "spacer", "diagnostics", "file-base-name", "file-modification-indicator"]
 center = []
-right = ["file-type", "position"]
+right = ["version-control", "spacer", "file-type", "position"]
 mode.normal = "NOR"
 mode.insert = "INS"
 mode.select = "SEL"

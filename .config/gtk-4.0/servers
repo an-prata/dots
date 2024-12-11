@@ -3,12 +3,12 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="smb://the-fog/the%20fog/" added="2024-07-15T02:10:25.906236Z" modified="2024-08-05T03:13:15.721215Z" visited="2024-08-05T03:13:15.721211Z">
+  <bookmark href="smb://the-fog/the%20fog/" added="2024-07-15T02:10:25.906236Z" modified="2024-11-09T06:26:50.281018Z" visited="2024-11-09T06:26:50.281009Z">
     <title>the fog on the-fog</title>
     <info>
       <metadata owner="http://freedesktop.org">
         <bookmark:applications>
-          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2024-08-05T03:13:15.721213Z" count="4"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2024-11-09T06:26:50.281013Z" count="5"/>
         </bookmark:applications>
       </metadata>
     </info>
