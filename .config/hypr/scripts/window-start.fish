@@ -2,24 +2,16 @@
 
 # Set the start state for windows to tiling
 function tile_windows
-    hyprctl keyword windowrule 'tile,title:.*'
-    hyprctl keyword dwindle:pseudotile false
+    hyprctl keyword windowrulev2 'tile,title:.*'
+
     set -U WINDOW_START tiling
     echo set tiling
 end
 
-# Set the start state for windows to pseudo-tiling
-function pseudo_tile_windows
-    hyprctl keyword windowrule 'tile,title:.*'
-    # hyprctl keyword dwindle:pseudotile true
-    # hyprctl keyword windowrule 'pseudo,title:.*'
-    set -U WINDOW_START pseudo_tiling
-    echo set pseudo_tiling
-end
-
 # Set the start state for windows to floating
 function float_windows
-    hyprctl keyword windowrule 'float,title:.*'
+    hyprctl keyword windowrulev2 'float,title:.*'
+
     set -U WINDOW_START floating
     echo set floating
 end
@@ -48,8 +40,6 @@ switch $argv[1]
     case toggle
         switch $WINDOW_START
             case tiling
-                #     pseudo_tile_windows
-                # case pseudo_tiling
                 float_windows
             case '*'
                 tile_windows
@@ -59,8 +49,6 @@ switch $argv[1]
         switch $WINDOW_START
             case floating
                 float_windows
-                # case pseudo_tiling
-                #     pseudo_tile_windows
             case '*'
                 tile_windows
         end
