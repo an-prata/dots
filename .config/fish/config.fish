@@ -45,4 +45,10 @@ if status is-interactive
     fish_add_path "$HOME/.local/bin/"
 
     source ~/.config/fish/secrets.fish
+
+    #/dev/tty1
+
+    if string match "/dev/tty*" "$(tty)"
+        Hyprland >/dev/null
+    end
 end
