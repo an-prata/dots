@@ -3,9 +3,46 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 34, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
-    "modules-left": ["image#layout", "image#window-start", "custom/media"],
+    "modules-left": ["image#layout", "image#window-start", "hyprland/window", "custom/window"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["wireplumber", "image#mako", "image#volume", "image#battery", "custom/clock"],
+
+    "image#layout": {
+        "exec": "~/.config/hypr/scripts/layout-switch.fish get",
+        "on-click": "~/.config/hypr/scripts/layout-switch.fish",
+        "signal": 2,
+        "size": 16,
+    },
+
+    "image#window-start": {
+        "exec": "~/.config/hypr/scripts/window-start.fish get",
+        "on-click": "~/.config/hypr/scripts/window-start.fish toggle",
+        "signal": 3,
+        "size": 16,
+    },
+
+    "custom/media": {
+        "exec": "~/.config/hypr/scripts/media.fish",
+        "on-click": "~/.config/hypr/scripts/media-player-cmd.fish play-pause",
+        "on-click-right": "mpc toggle",
+        "escape": true,
+        "signal": 1
+    },
+
+    "custom/window": {
+        "signal": 7,
+        "exec": "hyprctl activewindow | ~/.config/hypr/scripts/WindowTitle",
+        "escape": true,
+    },
+
+    "hyprland/window": {
+        "format": "",
+        "on-update": "pkill -RTMIN+7 waybar",
+        // "separate-outputs": true,
+        // "icon": true,
+        // "icon-size": 16
+    },
+
     "hyprland/workspaces": {
         "format": " {icon} ",
         "format-active": " {icon} ",
@@ -20,40 +57,39 @@
             "8": "八",
             "9": "九",
             "10": "十",
+            // "1": "1",
+            // "2": "2",
+            // "3": "3",
+            // "4": "4",
+            // "5": "5",
+            // "6": "6",
+            // "7": "7",
+            // "8": "8",
+            // "9": "9",
+            // "10": "10",
             "default": "-"
         },
         "sort-by-number": true,
         "on-click": "activate"
     },
-    "custom/clock": {
-        "exec": "date +'%A %B %e  %-l:%M %p '",
-        "interval": 5
-    },
-    "custom/media": {
-        "exec": "~/.config/hypr/scripts/media.fish",
-        "on-click": "~/.config/hypr/scripts/media-player-cmd.fish play-pause",
-        "on-click-right": "mpc toggle",
-        "escape": true,
-        "signal": 1
-    },
-    "image#layout": {
-        "exec": "~/.config/hypr/scripts/layout-switch.fish get",
-        "on-click": "~/.config/hypr/scripts/layout-switch.fish",
-        "signal": 2,
-        "size": 16,
-    },
-    "image#window-start": {
-        "exec": "~/.config/hypr/scripts/window-start.fish get",
-        "on-click": "~/.config/hypr/scripts/window-start.fish toggle",
-        "signal": 3,
-        "size": 16,
-    },
+
     "image#mako": {
         "exec": "~/.config/hypr/scripts/mako.fish get",
         "size": 16,
         "signal": 4,
         "on-click": "~/.config/hypr/scripts/mako.fish toggle",
     },
+
+    "image#volume": {
+        "exec": "~/.config/hypr/scripts/volume-icons.fish",
+        "size": 16,
+        "signal": 6,
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-",
+        "tooltop": true
+    },
+
     "wireplumber": {
         "scroll-step": 1, // %, can be a float
         // "format": "Volume {volume}",
@@ -70,20 +106,17 @@
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "on-update": "~/.config/hypr/scripts/volume-icons.fish update"
     },
+
     "image#battery": {
         "exec": "~/.config/hypr/scripts/battery-icon-module",
         "size": 22,
         "interval": 10,
         "tooltop": true
     },
-    "image#volume": {
-        "exec": "~/.config/hypr/scripts/volume-icons.fish",
-        "size": 16,
-        "signal": 6,
-        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+",
-        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-",
-        "tooltop": true
-    }
+
+    "custom/clock": {
+        "exec": "date +'%A %B %e  %-l:%M %p '",
+        "interval": 5
+    },
 }
 

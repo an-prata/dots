@@ -10,39 +10,7 @@
 window#waybar {
     color: #f2f2e9;
     background-color: rgba(38, 38, 45, 0.68);
-    border-bottom: 1px solid rgb(72, 72, 72);
-}
-
-button {
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-}
-
-#workspaces button {
-    color: inherit;
-    margin: 4px;
-    padding-right: 7px;
-    padding-left: 7px;
-    font-family: JetBrainsMono NF;
-    font-weight: lighter;
-    font-size: 10px;
-    letter-spacing: 1px;
-    border: none;
-    min-width: 36px;
-}
-
-#workspaces button:hover {
-}
-
-#workspaces button.active {
-    color: #7ab1cc;
-}
-
-#workspaces button.urgent {
-    color: #eb4d4b;
+    border-bottom: 1px solid rgba(72, 72, 72, 0.48);
 }
 
 #custom-clock,
@@ -57,9 +25,12 @@ button:hover {
     border: none;
 }
 
-#window,
+#window {
+    /* margin: 4px; */
+}
+
 #workspaces {
-    margin: 0 4px;
+    margin: 4px;
 }
 
 #custom-layout,
@@ -71,5 +42,39 @@ button:hover {
     color: #cca37a;
     border: none;
     min-width: 32px;
+}
+
+button {
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+#workspaces button {
+    color: inherit;
+    margin: 0 4px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 7px;
+    min-width: 36px;
+    font-size: 8px;
+}
+
+#workspaces button.active {
+    background-color: rgba(38, 38, 45, 0.72);
+}
+
+#workspaces button:hover {
+    background-color: rgba(38, 38, 45, 0.72);
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
 }
 
