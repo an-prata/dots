@@ -3,9 +3,9 @@
 /* For available classes, see the Catapult default "dark" theme: */
 /* https://github.com/otsaloma/catapult/blob/master/data/themes/dark.css */
 
-@define-color bg-color #1e1e24A8;
+@define-color bg-color #1e1e1eA8;
 @define-color fg-color #f2f2e9;
-@define-color selected-bg-color #2d2d3a;
+@define-color selected-bg-color #2d2d2d;
 @define-color selected-fg-color #f2f2e9;
 
 .catapult-window {
@@ -40,7 +40,7 @@
   box-shadow: none;
   caret-color: alpha(@fg-color, 0.2);
   color: @fg-color;
-  font-family: "JetBrainsMono NF", monospace;
+  font-family: "SF Pro Display";
   font-size: 200%;
   outline: none;
   border-radius: 7;
@@ -55,6 +55,7 @@
 
 .catapult-search-result-list {
   background-color: transparent;
+  border-radius: 7;
 }
 
 .catapult-search-result {
@@ -73,6 +74,7 @@
 .catapult-search-result:selected * {
   border-radius: 7;
   color: @selected-fg-color;
+  border: none;
 }
 
 .catapult-search-result-icon {
@@ -83,14 +85,15 @@
 .catapult-search-result-title {
   background-color: transparent;
   color: @fg-color;
-  font-family: "JetBrainsMono NF", monospace;
+  font-family: "SF Pro Display";
   font-size: 120%;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 4px;
 }
 
 .catapult-search-result-description {
   background-color: transparent;
   color: alpha(@fg-color, 0.5);
-  font-family: "JetBrainsMono NF", monospace;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 85%;
 }
