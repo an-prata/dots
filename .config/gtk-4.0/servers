@@ -13,4 +13,14 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="smb://192.168.1.31/the%20mist/" added="2025-02-02T19:50:01.996643Z" modified="2025-02-02T19:50:01.996649Z" visited="2025-02-02T19:50:01.996644Z">
+    <title>the mist on 192.168.1.31</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-02-02T19:50:01.996646Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

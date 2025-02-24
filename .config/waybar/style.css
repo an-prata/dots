@@ -1,19 +1,18 @@
 * {
-    font-family: JetBrainsMono NF;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-family: SF Pro Display;
+    font-size: 12.8px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
     padding: 0;
     margin: 0;
 }
 
 window#waybar {
-    color: #f2f2e9;
-    background-color: rgba(38, 38, 45, 0.68);
+    color: #ffffff;
+    background-color: rgba(38, 38, 38, 0.68);
     border-bottom: 1px solid rgba(72, 72, 72, 0.48);
 }
 
-#custom-clock,
 #battery,
 #wireplumber,
 #custom-media,
@@ -25,8 +24,16 @@ window#waybar {
     border: none;
 }
 
-#window {
-    /* margin: 4px; */
+#custom-clock {
+    margin: 4px;
+    padding-right: 14px;
+    padding-left: 10px;
+    /* min-width: 32px; */
+    border: none;
+}
+
+#custom-window {
+    margin: 4px;
 }
 
 #workspaces {
@@ -62,16 +69,20 @@ button:hover {
     letter-spacing: 1px;
     border: none;
     border-radius: 7px;
-    min-width: 36px;
+    min-width: 24px;
     font-size: 8px;
 }
 
-#workspaces button.active {
-    background-color: rgba(38, 38, 45, 0.72);
+#workspaces button:hover {
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+    /* min-width: 22px; */
+    background-color: rgba(38, 38, 38, 0.4);
 }
 
-#workspaces button:hover {
-    background-color: rgba(38, 38, 45, 0.72);
+#workspaces button.active {
+    /* border: 1px solid rgba(255, 255, 255, 0.75); */
+    /* min-width: 22px; */
+    background-color: rgba(38, 38, 38, 0.6);
 }
 
 #workspaces button.urgent {

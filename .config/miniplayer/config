@@ -1,6 +1,6 @@
 [player]
 font_width      = 8
-font_height     = 16 
+font_height     = 14
 
 [theme]
 bar_color		= auto
