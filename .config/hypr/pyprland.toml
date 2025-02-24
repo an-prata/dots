@@ -2,7 +2,7 @@
 plugins = [ "scratchpads" ]
 
 [scratchpads.term]
-command = "kitty --override background=#1e1e24 --override background_opacity=0.75 --class kitty-scratch"
+command = "kitty --override background=#1e1e1e --override background_opacity=0.75 --class kitty-scratch"
 class = "kitty-scratch"
 animation = "fromBottom"
 margin = 50
