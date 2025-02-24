@@ -35,15 +35,4 @@ switch $volume_string
         # Give output for waybar module
         echo $icon
         echo $volume
-
-        # Make an integer value between 0 and 100 (inclusive), representative of the current volume
-        set notif_value $(math $volume x 100)
-
-        # Send a notification, if we have a notification ID from before we replace the existing
-        # notif
-        if test "$VOLUME_N_ID" = ""
-            set -U VOLUME_N_ID $(notify-send "$notif_value" -u low -i $icon -h int:value:$notif_value -h string:synchronous:volume -p)
-        else
-            set -U VOLUME_N_ID $(notify-send "$notif_value" -u low -r $VOLUME_N_ID -i $icon -h int:value:$notif_value -h string:synchronous:volume -p)
-        end
 end
