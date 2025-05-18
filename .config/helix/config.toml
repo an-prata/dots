@@ -10,6 +10,7 @@ completion-timeout = 5
 shell = ["fish", "-c"]
 popup-border = "none"
 # mouse = false
+end-of-line-diagnostics = "info"
 
 [editor.lsp]
 display-messages = false
@@ -45,3 +46,6 @@ skip-levels = 1
 [editor.soft-wrap]
 enable = true
 
+[editor.inline-diagnostics]
+cursor-line = "info"
+other-lines = "info"

@@ -41,7 +41,7 @@
 "variable.other.member" = "red"
 "constant.character.escape" = "light-cyan"
 "function" = "cyan"
-"constructor" = "light-blue"
+"constructor" = { fg = "light-blue", modifiers = ["italic"] }
 "special" = "light-blue"
 "keyword" = { fg = "light-magenta", modifiers = ["italic"] }
 "label" = "light-magenta"
@@ -53,7 +53,7 @@
 "diff.minus" = "light-red"
 
 # the "you did something wrong" bits
-"diagnostic" = { modifiers = ["underlined"] }
+"diagnostic" = { underline.style = "curl" }
 "info" = "light-blue"
 "hint" = "gray"
 "debug" = "gray"
